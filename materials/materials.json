@@ -1,0 +1,703 @@
+{
+    "collections": {
+        "discussions": {
+            "publication_schema": {
+                "required_artifacts": [],
+                "optional_artifacts": [
+                    "discussion.pdf",
+                    "solution.pdf",
+                    "slides.pdf"
+                ],
+                "metadata_schema": {
+                    "optional_keys": {
+                        "recording": {
+                            "type": "string",
+                            "nullable": true
+                        }
+                    },
+                    "required_keys": {
+                        "date": {
+                            "type": "date"
+                        },
+                        "topic": {
+                            "type": "string"
+                        },
+                        "number": {
+                            "type": "integer"
+                        }
+                    }
+                },
+                "allow_unspecified_artifacts": false,
+                "is_ordered": true
+            },
+            "publications": {
+                "01-math_review": {
+                    "metadata": {
+                        "date": "2025-01-10",
+                        "topic": "Math Review #1",
+                        "number": 1,
+                        "recording": null
+                    },
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "discussions/01-math_review/slides.pdf"
+                        }
+                    }
+                },
+                "02-gradient": {
+                    "metadata": {
+                        "date": "2025-01-17",
+                        "topic": "Gradients",
+                        "number": 2
+                    },
+                    "artifacts": {}
+                },
+                "03-gradient_descent": {
+                    "metadata": {
+                        "date": "2025-01-24",
+                        "topic": "Gradient Descent and Subgradients",
+                        "number": 3
+                    },
+                    "artifacts": {}
+                },
+                "04-convexity": {
+                    "metadata": {
+                        "date": "2025-01-31",
+                        "topic": "Convexity",
+                        "number": 4,
+                        "recording": null
+                    },
+                    "artifacts": {}
+                },
+                "05-kernels": {
+                    "metadata": {
+                        "date": "2025-02-14",
+                        "topic": "Regularization and Kernels",
+                        "number": 5,
+                        "recording": null
+                    },
+                    "artifacts": {}
+                },
+                "06-probabilistic_modeling": {
+                    "metadata": {
+                        "date": "2025-02-21",
+                        "topic": "Probabilistic Modeling",
+                        "number": 6,
+                        "recording": null
+                    },
+                    "artifacts": {}
+                },
+                "07-multivariate-gaussians": {
+                    "metadata": {
+                        "date": "2025-02-28",
+                        "topic": "Bayes Classifiers",
+                        "number": 7,
+                        "recording": null
+                    },
+                    "artifacts": {}
+                },
+                "09-decision_trees": {
+                    "metadata": {
+                        "date": "2025-03-07",
+                        "topic": "Decision Trees",
+                        "number": 8,
+                        "recording": null
+                    },
+                    "artifacts": {}
+                },
+                "xx-redemption_exam_review": {
+                    "metadata": {
+                        "date": "2025-03-14",
+                        "topic": "Midterm 02 Review",
+                        "number": 9,
+                        "recording": null
+                    },
+                    "artifacts": {}
+                },
+                "xx-review": {
+                    "metadata": {
+                        "date": "2025-03-21",
+                        "topic": "Midterm 02 Review",
+                        "number": 10,
+                        "recording": null
+                    },
+                    "artifacts": {}
+                }
+            }
+        },
+        "lectures": {
+            "publication_schema": {
+                "required_artifacts": [
+                    "slides.pdf"
+                ],
+                "optional_artifacts": [
+                    "slides-marked.pdf"
+                ],
+                "metadata_schema": {
+                    "optional_keys": {
+                        "videos": {
+                            "element_schema": {
+                                "required_keys": {
+                                    "title": {
+                                        "type": "string"
+                                    },
+                                    "url": {
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "dict"
+                            },
+                            "type": "list",
+                            "nullable": true
+                        },
+                        "note": {
+                            "type": "string"
+                        }
+                    },
+                    "required_keys": {
+                        "date": {
+                            "type": "date"
+                        },
+                        "topic": {
+                            "type": "string"
+                        },
+                        "number": {
+                            "type": "integer"
+                        }
+                    }
+                },
+                "allow_unspecified_artifacts": false,
+                "is_ordered": true
+            },
+            "publications": {
+                "01-knn": {
+                    "metadata": {
+                        "date": "2025-01-07",
+                        "topic": "Introduction: Nearest Neighbors",
+                        "number": 1
+                    },
+                    "artifacts": {
+                        "slides-marked.pdf": {
+                            "path": "lectures/01-knn/slides-marked.pdf"
+                        }
+                    }
+                },
+                "02-erm_and_linear_models": {
+                    "metadata": {
+                        "date": "2025-01-09",
+                        "topic": "ERM and Least Squares",
+                        "number": 2,
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides-marked.pdf": {
+                            "path": "lectures/02-erm_and_linear_models/slides-marked.pdf"
+                        }
+                    }
+                },
+                "03-gradient_descent": {
+                    "metadata": {
+                        "date": "2025-01-14",
+                        "topic": "Gradient Descent",
+                        "number": 3,
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides-marked.pdf": {
+                            "path": "lectures/03-gradient_descent/slides-marked.pdf"
+                        }
+                    }
+                },
+                "04-sgd_and_subgradients": {
+                    "metadata": {
+                        "date": "2025-01-16",
+                        "topic": "SGD and Subgradients",
+                        "number": 4,
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides-marked.pdf": {
+                            "path": "lectures/04-sgd_and_subgradients/slides-marked.pdf"
+                        }
+                    }
+                },
+                "05-convexity": {
+                    "metadata": {
+                        "date": "2025-01-21",
+                        "topic": "Convexity",
+                        "number": 5,
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides-marked.pdf": {
+                            "path": "lectures/05-convexity/slides-marked.pdf"
+                        }
+                    }
+                },
+                "06-linear_classification": {
+                    "metadata": {
+                        "date": "2025-01-23",
+                        "topic": "Linear Classifiers",
+                        "number": 6,
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides-marked.pdf": {
+                            "path": "lectures/06-linear_classification/slides-marked.pdf"
+                        }
+                    }
+                },
+                "07-svm": {
+                    "metadata": {
+                        "date": "2025-01-28",
+                        "topic": "SVMs",
+                        "number": 7,
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides-marked.pdf": {
+                            "path": "lectures/07-svm/slides-marked.pdf"
+                        }
+                    }
+                },
+                "08-feature_maps": {
+                    "metadata": {
+                        "date": "2025-01-30",
+                        "topic": "Feature Maps",
+                        "number": 8,
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides-marked.pdf": {
+                            "path": "lectures/08-feature_maps/slides-marked.pdf"
+                        }
+                    }
+                },
+                "09-regularization": {
+                    "metadata": {
+                        "date": "2025-02-04",
+                        "topic": "Regularization",
+                        "number": 9,
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides-marked.pdf": {
+                            "path": "lectures/09-regularization/slides-marked.pdf"
+                        }
+                    }
+                },
+                "10-kernels": {
+                    "metadata": {
+                        "date": "2025-02-11",
+                        "topic": "Kernels",
+                        "number": 10,
+                        "videos": [
+                            {
+                                "title": "High-dimensional feature maps",
+                                "url": "https://youtu.be/TFb7OYUaICw"
+                            },
+                            {
+                                "title": "The Kernel Trick",
+                                "url": "https://youtu.be/Ryc4nCqoxl0"
+                            },
+                            {
+                                "title": "Kernel Ridge Regression",
+                                "url": "https://youtu.be/ojoasqwLTwM"
+                            },
+                            {
+                                "title": "Valid Kernels",
+                                "url": "https://youtu.be/HJbwmG5FqlI"
+                            },
+                            {
+                                "title": "Demo: Gaussian Kernel SVMs",
+                                "url": "https://youtu.be/zuz42-ufUKk"
+                            }
+                        ]
+                    },
+                    "artifacts": {
+                        "slides-marked.pdf": {
+                            "path": "lectures/10-kernels/slides-marked.pdf"
+                        }
+                    }
+                },
+                "11-bayes_decision_theory": {
+                    "metadata": {
+                        "date": "2025-02-13",
+                        "topic": "Bayes Decision Theory",
+                        "number": 11,
+                        "videos": [
+                            {
+                                "title": "Exercise: Computing Bayes Error",
+                                "url": "https://youtu.be/YrYirKHrxyo"
+                            }
+                        ]
+                    },
+                    "artifacts": {
+                        "slides-marked.pdf": {
+                            "path": "lectures/11-bayes_decision_theory/slides-marked.pdf"
+                        }
+                    }
+                },
+                "12-density_estimation": {
+                    "metadata": {
+                        "date": "2025-02-18",
+                        "topic": "Density Estimation",
+                        "number": 12,
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides-marked.pdf": {
+                            "path": "lectures/12-density_estimation/slides-marked.pdf"
+                        }
+                    }
+                },
+                "13-mle": {
+                    "metadata": {
+                        "date": "2025-02-20",
+                        "topic": "Maximum Likelihood",
+                        "number": 13,
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides-marked.pdf": {
+                            "path": "lectures/13-mle/slides-marked.pdf"
+                        }
+                    }
+                },
+                "14-mv-gaussians": {
+                    "metadata": {
+                        "date": "2025-02-25",
+                        "topic": "Multivariate Gaussians",
+                        "number": 14,
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides-marked.pdf": {
+                            "path": "lectures/14-mv-gaussians/slides-marked.pdf"
+                        }
+                    }
+                },
+                "15-naive_bayes": {
+                    "metadata": {
+                        "date": "2025-02-27",
+                        "topic": "Naive Bayes",
+                        "number": 15,
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides-marked.pdf": {
+                            "path": "lectures/15-naive_bayes/slides-marked.pdf"
+                        }
+                    }
+                },
+                "16-regression_probabilistic": {
+                    "metadata": {
+                        "date": "2025-03-04",
+                        "topic": "Regression (Probabilistic View)",
+                        "number": 16,
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides-marked.pdf": {
+                            "path": "lectures/16-regression_probabilistic/slides-marked.pdf"
+                        }
+                    }
+                },
+                "17-decision_trees": {
+                    "metadata": {
+                        "date": "2025-03-11",
+                        "topic": "Decision Trees",
+                        "number": 17,
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides-marked.pdf": {
+                            "path": "lectures/17-decision_trees/slides-marked.pdf"
+                        }
+                    }
+                },
+                "18-boosting": {
+                    "metadata": {
+                        "date": "2025-03-13",
+                        "topic": "Boosting",
+                        "number": 18,
+                        "videos": null
+                    },
+                    "artifacts": {
+                        "slides-marked.pdf": {
+                            "path": "lectures/18-boosting/slides-marked.pdf"
+                        }
+                    }
+                },
+                "xx-neural_networks": {
+                    "metadata": {
+                        "date": "2025-03-18",
+                        "topic": "Neural Networks",
+                        "number": 19,
+                        "videos": null
+                    },
+                    "artifacts": {}
+                }
+            }
+        },
+        "labs": {
+            "publication_schema": {
+                "required_artifacts": [],
+                "optional_artifacts": [],
+                "metadata_schema": {
+                    "required_keys": {
+                        "due": {
+                            "type": "datetime"
+                        },
+                        "ready": {
+                            "type": "boolean"
+                        },
+                        "released": {
+                            "type": "datetime"
+                        },
+                        "topic": {
+                            "type": "string"
+                        },
+                        "number": {
+                            "type": "integer"
+                        }
+                    }
+                },
+                "allow_unspecified_artifacts": false,
+                "is_ordered": true
+            },
+            "publications": {
+                "01-nearest_neighbor_and_linear_models": {
+                    "metadata": {
+                        "due": "2025-01-12 23:59:00",
+                        "ready": true,
+                        "released": "2025-01-07 00:00:00",
+                        "topic": "Nearest Neighbor and Regression",
+                        "number": 1
+                    },
+                    "artifacts": {}
+                },
+                "02-gradient_descent": {
+                    "metadata": {
+                        "due": "2025-01-19 23:59:00",
+                        "ready": true,
+                        "released": "2025-01-14 00:00:00",
+                        "topic": "Gradient Descent",
+                        "number": 2
+                    },
+                    "artifacts": {}
+                },
+                "03-convexity_and_linear_classifiers": {
+                    "metadata": {
+                        "due": "2025-01-26 23:59:00",
+                        "ready": true,
+                        "released": "2025-01-21 00:00:00",
+                        "topic": "Convexity and Linear Classification",
+                        "number": 3
+                    },
+                    "artifacts": {}
+                },
+                "04-svms_and_feature_maps": {
+                    "metadata": {
+                        "due": "2025-02-02 23:59:00",
+                        "ready": true,
+                        "released": "2025-01-28 00:00:00",
+                        "topic": "SVMs and Feature Maps",
+                        "number": 4
+                    },
+                    "artifacts": {}
+                },
+                "05-regularization": {
+                    "metadata": {
+                        "due": "2025-02-09 23:59:00",
+                        "ready": true,
+                        "released": "2025-02-04 00:00:00",
+                        "topic": "Regularization",
+                        "number": 5
+                    },
+                    "artifacts": {}
+                },
+                "06-kernels_and_probabilistic_models": {
+                    "metadata": {
+                        "due": "2025-02-16 23:59:00",
+                        "ready": true,
+                        "released": "2025-02-11 00:00:00",
+                        "topic": "Kernels and Probabilistic Modeling",
+                        "number": 6
+                    },
+                    "artifacts": {}
+                },
+                "07-density_estimation_and_mle": {
+                    "metadata": {
+                        "due": "2025-02-23 23:59:00",
+                        "ready": true,
+                        "released": "2025-02-18 00:00:00",
+                        "topic": "Maximum Likelihood Estimation",
+                        "number": 7
+                    },
+                    "artifacts": {}
+                },
+                "08-mv_gaussians-nb": {
+                    "metadata": {
+                        "due": "2025-03-02 23:59:00",
+                        "ready": true,
+                        "released": "2025-02-25 00:00:00",
+                        "topic": "Multivariate Guassians and Naive Bayes",
+                        "number": 8
+                    },
+                    "artifacts": {}
+                },
+                "09-decision_trees": {
+                    "metadata": {
+                        "due": "2024-03-17 23:59:00",
+                        "ready": true,
+                        "released": "2024-03-12 00:00:00",
+                        "topic": "Decision Trees",
+                        "number": 9
+                    },
+                    "artifacts": {}
+                },
+                "xx-kernels": {
+                    "metadata": {
+                        "due": "2024-03-24 23:59:00",
+                        "ready": false,
+                        "released": "2024-03-19 00:00:00",
+                        "topic": "Kernels",
+                        "number": 10
+                    },
+                    "artifacts": {}
+                }
+            }
+        },
+        "homeworks": {
+            "publication_schema": {
+                "required_artifacts": [
+                    "homework.pdf",
+                    "solution.pdf",
+                    "template.zip"
+                ],
+                "optional_artifacts": [],
+                "metadata_schema": {
+                    "required_keys": {
+                        "due": {
+                            "type": "datetime"
+                        },
+                        "released": {
+                            "type": "datetime"
+                        },
+                        "topic": {
+                            "type": "string"
+                        },
+                        "number": {
+                            "type": "integer"
+                        }
+                    }
+                },
+                "allow_unspecified_artifacts": false,
+                "is_ordered": true
+            },
+            "publications": {
+                "01-nearest_neighbor_and_least_squares": {
+                    "metadata": {
+                        "due": "2025-01-15 23:59:00",
+                        "released": "2025-01-09 00:00:00",
+                        "topic": "Nearest Neighbors and Linear Regression",
+                        "number": 1
+                    },
+                    "artifacts": {}
+                },
+                "02-linear_models_and_gradient": {
+                    "metadata": {
+                        "due": "2025-01-22 23:59:00",
+                        "released": "2025-01-16 00:00:00",
+                        "topic": "Linear Models and Gradients",
+                        "number": 2
+                    },
+                    "artifacts": {}
+                },
+                "03-convexity_and_classification": {
+                    "metadata": {
+                        "due": "2025-01-29 23:59:00",
+                        "released": "2025-01-23 00:00:00",
+                        "topic": "Convexity and Perceptrons",
+                        "number": 3
+                    },
+                    "artifacts": {}
+                },
+                "04-svm_and_feature_maps": {
+                    "metadata": {
+                        "due": "2025-02-05 23:59:00",
+                        "released": "2025-01-30 00:00:00",
+                        "topic": "SVMs and Feature Maps",
+                        "number": 4
+                    },
+                    "artifacts": {}
+                },
+                "05-regularization": {
+                    "metadata": {
+                        "due": "2025-02-12 23:59:00",
+                        "released": "2025-02-06 00:00:00",
+                        "topic": "Regularization",
+                        "number": 5
+                    },
+                    "artifacts": {}
+                },
+                "06-kernels_and_bayes": {
+                    "metadata": {
+                        "due": "2025-02-19 23:59:00",
+                        "released": "2025-02-13 00:00:00",
+                        "topic": "Kernels and Probabilistic Modeling",
+                        "number": 6
+                    },
+                    "artifacts": {}
+                },
+                "07-mle": {
+                    "metadata": {
+                        "due": "2025-02-26 23:59:00",
+                        "released": "2025-02-20 00:00:00",
+                        "topic": "Density Estimation",
+                        "number": 7
+                    },
+                    "artifacts": {}
+                },
+                "08-mv_gaussians_and_nb": {
+                    "metadata": {
+                        "due": "2025-03-05 23:59:00",
+                        "released": "2025-02-27 00:00:00",
+                        "topic": "Multivariate Gaussians and Naive Bayes",
+                        "number": 8
+                    },
+                    "artifacts": {}
+                },
+                "09-super_hw": {
+                    "metadata": {
+                        "due": "2024-06-12 23:59:00",
+                        "released": "2024-05-29 00:00:00",
+                        "topic": "Super Homework",
+                        "number": 9
+                    },
+                    "artifacts": {}
+                }
+            }
+        },
+        "default": {
+            "publication_schema": {
+                "required_artifacts": [],
+                "optional_artifacts": null,
+                "metadata_schema": null,
+                "allow_unspecified_artifacts": true,
+                "is_ordered": false
+            },
+            "publications": {
+                "supplementary/sample_midterm_01": {
+                    "metadata": {},
+                    "artifacts": {
+                        "mt01.pdf": {
+                            "path": "default/supplementary/sample_midterm_01/mt01.pdf"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
