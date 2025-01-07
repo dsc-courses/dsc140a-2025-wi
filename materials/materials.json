@@ -177,8 +177,8 @@
                         "number": 1
                     },
                     "artifacts": {
-                        "slides-marked.pdf": {
-                            "path": "lectures/01-knn/slides-marked.pdf"
+                        "slides.pdf": {
+                            "path": "lectures/01-knn/slides.pdf"
                         }
                     }
                 },
@@ -189,11 +189,7 @@
                         "number": 2,
                         "videos": null
                     },
-                    "artifacts": {
-                        "slides-marked.pdf": {
-                            "path": "lectures/02-erm_and_linear_models/slides-marked.pdf"
-                        }
-                    }
+                    "artifacts": {}
                 },
                 "03-gradient_descent": {
                     "metadata": {
@@ -202,11 +198,7 @@
                         "number": 3,
                         "videos": null
                     },
-                    "artifacts": {
-                        "slides-marked.pdf": {
-                            "path": "lectures/03-gradient_descent/slides-marked.pdf"
-                        }
-                    }
+                    "artifacts": {}
                 },
                 "04-sgd_and_subgradients": {
                     "metadata": {
@@ -215,11 +207,7 @@
                         "number": 4,
                         "videos": null
                     },
-                    "artifacts": {
-                        "slides-marked.pdf": {
-                            "path": "lectures/04-sgd_and_subgradients/slides-marked.pdf"
-                        }
-                    }
+                    "artifacts": {}
                 },
                 "05-convexity": {
                     "metadata": {
@@ -228,11 +216,7 @@
                         "number": 5,
                         "videos": null
                     },
-                    "artifacts": {
-                        "slides-marked.pdf": {
-                            "path": "lectures/05-convexity/slides-marked.pdf"
-                        }
-                    }
+                    "artifacts": {}
                 },
                 "06-linear_classification": {
                     "metadata": {
@@ -241,11 +225,7 @@
                         "number": 6,
                         "videos": null
                     },
-                    "artifacts": {
-                        "slides-marked.pdf": {
-                            "path": "lectures/06-linear_classification/slides-marked.pdf"
-                        }
-                    }
+                    "artifacts": {}
                 },
                 "07-svm": {
                     "metadata": {
@@ -254,11 +234,7 @@
                         "number": 7,
                         "videos": null
                     },
-                    "artifacts": {
-                        "slides-marked.pdf": {
-                            "path": "lectures/07-svm/slides-marked.pdf"
-                        }
-                    }
+                    "artifacts": {}
                 },
                 "08-feature_maps": {
                     "metadata": {
@@ -267,11 +243,7 @@
                         "number": 8,
                         "videos": null
                     },
-                    "artifacts": {
-                        "slides-marked.pdf": {
-                            "path": "lectures/08-feature_maps/slides-marked.pdf"
-                        }
-                    }
+                    "artifacts": {}
                 },
                 "09-regularization": {
                     "metadata": {
@@ -280,11 +252,7 @@
                         "number": 9,
                         "videos": null
                     },
-                    "artifacts": {
-                        "slides-marked.pdf": {
-                            "path": "lectures/09-regularization/slides-marked.pdf"
-                        }
-                    }
+                    "artifacts": {}
                 },
                 "10-kernels": {
                     "metadata": {
@@ -314,11 +282,7 @@
                             }
                         ]
                     },
-                    "artifacts": {
-                        "slides-marked.pdf": {
-                            "path": "lectures/10-kernels/slides-marked.pdf"
-                        }
-                    }
+                    "artifacts": {}
                 },
                 "11-bayes_decision_theory": {
                     "metadata": {
@@ -332,11 +296,7 @@
                             }
                         ]
                     },
-                    "artifacts": {
-                        "slides-marked.pdf": {
-                            "path": "lectures/11-bayes_decision_theory/slides-marked.pdf"
-                        }
-                    }
+                    "artifacts": {}
                 },
                 "12-density_estimation": {
                     "metadata": {
@@ -345,11 +305,7 @@
                         "number": 12,
                         "videos": null
                     },
-                    "artifacts": {
-                        "slides-marked.pdf": {
-                            "path": "lectures/12-density_estimation/slides-marked.pdf"
-                        }
-                    }
+                    "artifacts": {}
                 },
                 "13-mle": {
                     "metadata": {
@@ -358,11 +314,7 @@
                         "number": 13,
                         "videos": null
                     },
-                    "artifacts": {
-                        "slides-marked.pdf": {
-                            "path": "lectures/13-mle/slides-marked.pdf"
-                        }
-                    }
+                    "artifacts": {}
                 },
                 "14-mv-gaussians": {
                     "metadata": {
@@ -371,11 +323,7 @@
                         "number": 14,
                         "videos": null
                     },
-                    "artifacts": {
-                        "slides-marked.pdf": {
-                            "path": "lectures/14-mv-gaussians/slides-marked.pdf"
-                        }
-                    }
+                    "artifacts": {}
                 },
                 "15-naive_bayes": {
                     "metadata": {
@@ -384,11 +332,7 @@
                         "number": 15,
                         "videos": null
                     },
-                    "artifacts": {
-                        "slides-marked.pdf": {
-                            "path": "lectures/15-naive_bayes/slides-marked.pdf"
-                        }
-                    }
+                    "artifacts": {}
                 },
                 "16-regression_probabilistic": {
                     "metadata": {
@@ -397,11 +341,7 @@
                         "number": 16,
                         "videos": null
                     },
-                    "artifacts": {
-                        "slides-marked.pdf": {
-                            "path": "lectures/16-regression_probabilistic/slides-marked.pdf"
-                        }
-                    }
+                    "artifacts": {}
                 },
                 "17-decision_trees": {
                     "metadata": {
@@ -410,11 +350,7 @@
                         "number": 17,
                         "videos": null
                     },
-                    "artifacts": {
-                        "slides-marked.pdf": {
-                            "path": "lectures/17-decision_trees/slides-marked.pdf"
-                        }
-                    }
+                    "artifacts": {}
                 },
                 "18-boosting": {
                     "metadata": {
@@ -423,11 +359,7 @@
                         "number": 18,
                         "videos": null
                     },
-                    "artifacts": {
-                        "slides-marked.pdf": {
-                            "path": "lectures/18-boosting/slides-marked.pdf"
-                        }
-                    }
+                    "artifacts": {}
                 },
                 "xx-neural_networks": {
                     "metadata": {
