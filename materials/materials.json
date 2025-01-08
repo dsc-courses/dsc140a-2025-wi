@@ -192,7 +192,11 @@
                         "number": 2,
                         "videos": null
                     },
-                    "artifacts": {}
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/02-erm_and_linear_models/slides.pdf"
+                        }
+                    }
                 },
                 "03-gradient_descent": {
                     "metadata": {
