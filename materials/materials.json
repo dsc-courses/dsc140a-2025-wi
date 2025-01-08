@@ -631,6 +631,20 @@
                 "is_ordered": false
             },
             "publications": {
+                "supplementary/math_review": {
+                    "metadata": {},
+                    "artifacts": {
+                        "solution.pdf": {
+                            "path": "default/supplementary/math_review/solution.pdf"
+                        },
+                        "worksheet.pdf": {
+                            "path": "default/supplementary/math_review/worksheet.pdf"
+                        },
+                        "slides.pdf": {
+                            "path": "default/supplementary/math_review/slides.pdf"
+                        }
+                    }
+                },
                 "supplementary/sample_midterm_01": {
                     "metadata": {},
                     "artifacts": {
