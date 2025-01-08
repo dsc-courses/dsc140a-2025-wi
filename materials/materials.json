@@ -179,6 +179,9 @@
                     "artifacts": {
                         "slides.pdf": {
                             "path": "lectures/01-knn/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/01-knn/slides-marked.pdf"
                         }
                     }
                 },
