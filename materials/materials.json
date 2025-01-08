@@ -536,7 +536,14 @@
                         "topic": "Nearest Neighbors and Linear Regression",
                         "number": 1
                     },
-                    "artifacts": {}
+                    "artifacts": {
+                        "homework.pdf": {
+                            "path": "homeworks/01-nearest_neighbor_and_least_squares/homework.pdf"
+                        },
+                        "template.zip": {
+                            "path": "homeworks/01-nearest_neighbor_and_least_squares/template.zip"
+                        }
+                    }
                 },
                 "02-linear_models_and_gradient": {
                     "metadata": {
