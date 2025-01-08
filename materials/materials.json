@@ -38,11 +38,7 @@
                         "number": 1,
                         "recording": null
                     },
-                    "artifacts": {
-                        "slides.pdf": {
-                            "path": "discussions/01-math_review/slides.pdf"
-                        }
-                    }
+                    "artifacts": {}
                 },
                 "02-gradient": {
                     "metadata": {
