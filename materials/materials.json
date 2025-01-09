@@ -186,7 +186,16 @@
                         "date": "2025-01-09",
                         "topic": "ERM and Least Squares",
                         "number": 2,
-                        "videos": null
+                        "videos": [
+                            {
+                                "title": "Derivation of Least Squares",
+                                "url": "https://youtu.be/igem__kz0C4"
+                            },
+                            {
+                                "title": "From Theory to Practice",
+                                "url": "https://youtu.be/acXJUpiWxYE"
+                            }
+                        ]
                     },
                     "artifacts": {
                         "slides.pdf": {
