@@ -208,7 +208,11 @@
                         "number": 3,
                         "videos": null
                     },
-                    "artifacts": {}
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/03-gradient_descent/slides.pdf"
+                        }
+                    }
                 },
                 "04-sgd_and_subgradients": {
                     "metadata": {
