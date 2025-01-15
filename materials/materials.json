@@ -40,6 +40,9 @@
                     "artifacts": {
                         "discussion.pdf": {
                             "path": "discussions/01-gradient/discussion.pdf"
+                        },
+                        "solution.pdf": {
+                            "path": "discussions/01-gradient/solution.pdf"
                         }
                     }
                 },
