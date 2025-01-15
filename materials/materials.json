@@ -211,6 +211,9 @@
                     "artifacts": {
                         "slides.pdf": {
                             "path": "lectures/03-gradient_descent/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/03-gradient_descent/slides-marked.pdf"
                         }
                     }
                 },
