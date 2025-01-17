@@ -564,6 +564,9 @@
                         "homework.pdf": {
                             "path": "homeworks/01-nearest_neighbor_and_least_squares/homework.pdf"
                         },
+                        "solution.pdf": {
+                            "path": "homeworks/01-nearest_neighbor_and_least_squares/solution.pdf"
+                        },
                         "template.zip": {
                             "path": "homeworks/01-nearest_neighbor_and_least_squares/template.zip"
                         }
