@@ -230,6 +230,9 @@
                     "artifacts": {
                         "slides.pdf": {
                             "path": "lectures/04-sgd_and_subgradients/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/04-sgd_and_subgradients/slides-marked.pdf"
                         }
                     }
                 },
