@@ -49,10 +49,14 @@
                 "02-gradient_descent": {
                     "metadata": {
                         "date": "2025-01-17",
-                        "topic": "Gradient Descent and Subgradients",
+                        "topic": "Stochastic Gradient Descent",
                         "number": 2
                     },
-                    "artifacts": {}
+                    "artifacts": {
+                        "discussion.pdf": {
+                            "path": "discussions/02-gradient_descent/discussion.pdf"
+                        }
+                    }
                 },
                 "03-convexity": {
                     "metadata": {
@@ -114,6 +118,14 @@
                         "topic": "Midterm 02 Review",
                         "number": 9,
                         "recording": null
+                    },
+                    "artifacts": {}
+                },
+                "xx-subgradients": {
+                    "metadata": {
+                        "date": "2025-03-21",
+                        "topic": "Gradient Descent and Subgradients",
+                        "number": 10
                     },
                     "artifacts": {}
                 }
