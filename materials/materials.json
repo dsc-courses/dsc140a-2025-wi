@@ -254,11 +254,15 @@
                 "05-convexity": {
                     "metadata": {
                         "date": "2025-01-21",
-                        "topic": "Convexity",
+                        "topic": "Subgradients and Convexity",
                         "number": 5,
                         "videos": null
                     },
-                    "artifacts": {}
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/05-convexity/slides.pdf"
+                        }
+                    }
                 },
                 "06-linear_classification": {
                     "metadata": {
