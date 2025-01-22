@@ -261,6 +261,9 @@
                     "artifacts": {
                         "slides.pdf": {
                             "path": "lectures/05-convexity/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/05-convexity/slides-marked.pdf"
                         }
                     }
                 },
