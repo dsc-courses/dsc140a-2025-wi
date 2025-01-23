@@ -270,11 +270,15 @@
                 "06-linear_classification": {
                     "metadata": {
                         "date": "2025-01-23",
-                        "topic": "Linear Classifiers",
+                        "topic": "Convexity and Linear Classifiers",
                         "number": 6,
                         "videos": null
                     },
-                    "artifacts": {}
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/06-linear_classification/slides.pdf"
+                        }
+                    }
                 },
                 "07-svm": {
                     "metadata": {
