@@ -64,11 +64,15 @@
                 "03-convexity": {
                     "metadata": {
                         "date": "2025-01-24",
-                        "topic": "Convexity",
+                        "topic": "Subgradients and Convexity",
                         "number": 3,
                         "recording": null
                     },
-                    "artifacts": {}
+                    "artifacts": {
+                        "discussion.pdf": {
+                            "path": "discussions/03-convexity/discussion.pdf"
+                        }
+                    }
                 },
                 "04-kernels": {
                     "metadata": {
