@@ -628,7 +628,14 @@
                         "topic": "Convexity and Perceptrons",
                         "number": 3
                     },
-                    "artifacts": {}
+                    "artifacts": {
+                        "homework.pdf": {
+                            "path": "homeworks/03-convexity_and_classification/homework.pdf"
+                        },
+                        "template.zip": {
+                            "path": "homeworks/03-convexity_and_classification/template.zip"
+                        }
+                    }
                 },
                 "04-svm_and_feature_maps": {
                     "metadata": {
