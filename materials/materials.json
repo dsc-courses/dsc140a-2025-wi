@@ -276,7 +276,12 @@
                         "date": "2025-01-23",
                         "topic": "Convexity and Linear Classifiers",
                         "number": 6,
-                        "videos": null
+                        "videos": [
+                            {
+                                "title": "Perceptron Loss",
+                                "url": "https://youtu.be/j7cN1PMBwEg"
+                            }
+                        ]
                     },
                     "artifacts": {
                         "slides.pdf": {
