@@ -286,6 +286,9 @@
                     "artifacts": {
                         "slides.pdf": {
                             "path": "lectures/06-linear_classification/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/06-linear_classification/slides-marked.pdf"
                         }
                     }
                 },
