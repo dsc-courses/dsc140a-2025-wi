@@ -624,6 +624,9 @@
                         "homework.pdf": {
                             "path": "homeworks/02-linear_models_and_gradient/homework.pdf"
                         },
+                        "solution.pdf": {
+                            "path": "homeworks/02-linear_models_and_gradient/solution.pdf"
+                        },
                         "template.zip": {
                             "path": "homeworks/02-linear_models_and_gradient/template.zip"
                         }
