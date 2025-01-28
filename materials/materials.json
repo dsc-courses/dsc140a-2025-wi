@@ -299,7 +299,11 @@
                         "number": 7,
                         "videos": null
                     },
-                    "artifacts": {}
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/07-svm/slides.pdf"
+                        }
+                    }
                 },
                 "08-feature_maps": {
                     "metadata": {
