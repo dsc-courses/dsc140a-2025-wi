@@ -71,6 +71,9 @@
                     "artifacts": {
                         "discussion.pdf": {
                             "path": "discussions/03-convexity/discussion.pdf"
+                        },
+                        "solution.pdf": {
+                            "path": "discussions/03-convexity/solution.pdf"
                         }
                     }
                 },
