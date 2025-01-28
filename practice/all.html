@@ -643,7 +643,23 @@
         <div class="problem">
     <div class="problem-body">
 <p>Consider the data set of diamonds and circles shown below. Suppose a <span class="math">\(k\)</span>-nn classifier is used to predict the label of the new point marked by <span class="math">\(\times\)</span>, with <span class="math">\(k = 3\)</span>. What will be the prediction? You may assume that the Euclidean distance is used.</p>
-<center><div class="image"><img src="images/018/data.png" /></div></center>
+<center><div class="image"><img src="images/018/data-no-soln.PNG" /></div></center>
+<details>
+    <summary>Solution</summary>
+<p>The new point will be classified as a Diamond.</p>
+<p>To classify a point with <span class="math">\(k\)</span>-nn, we examine the <span class="math">\(k\)</span>(in this case, <span class="math">\(k = 3\)</span>) nearest "neighbors" to whichever point we want to classify. Then, whichever class appears more among those neighbors, we'll predict our new point is part of that class too.</p>
+<p>So, what are the three neighbors closest to our new point? Since we assume Euclidean distance (and not some other type of distance, like Manhattan distance), this problem becomes fairly easy to solve from first glance.</p>
+<p>Graphically: the three nearest points are the red Diamond to the upper-right of our new point, the blue Circle to the lower-left of our new point, and the red Diamond directly above our new point. The diamond class is more common among the three neighbors, so we predict our new point will also be of the Diamond class.</p>
+<p>Mathematically: Euclidean distance is defined by <span class="math">\(D = \sqrt{(\delta x)^2 + (\delta y)^2}\)</span>, where <span class="math">\(\delta x\)</span> is change in the x-direction and <span class="math">\(\delta y\)</span> is change in the y-direction. We can find the Euclidean distances from each point in our graph to our new point. Whichever three points have the smallest Euclidean distances are the three neighbors we should look at the classes of. After finding all Euclidean distances, we find that the three neighbors we should choose are the same as the ones we chose above, in the visual explanation. The respective Euclidean distances for these three points are <span class="math">\(\sqrt{1^2 + 1^2} = \sqrt{2}\)</span>, <span class="math">\(\sqrt{(-1)^2 + (-2)^2} = \sqrt{5}\)</span>, and <span class="math">\(\sqrt{0^2 + 3^2} = 3\)</span>, which are shorter than all other distances to the new point in the graph. As an aside, the idea behind <span class="math">\(k\)</span>-nn is that we assume a property that if two points are similar in location (i.e. they are near each other), then they are likely similar in class. So, <span class="math">\(k\)</span>-nn is valuable in situations where we have data that is very spatially correlated (ex: predicting price of a new house as "high" or "low" depending on other house prices in the area.)</p>
+</details>
+
+<details>
+    <summary>Solution</summary>
+<p>To classify a point with <span class="math">\(k\)</span>-nn, we examine the <span class="math">\(k\)</span>(in this case, <span class="math">\(k = 3)\)</span> nearest neighbors to whichever point we want to classify. Then, whichever class appears more among those neighbors, we'll predict our new point is part of that class too.</p>
+<p><b>Graphically</b>: The three nearest points are the red Diamond to the upper-right of our new point, the blue Circle to the lower-left of our new point, and the red Diamond directly above our new point. The diamond class is more common among the three neighbors, so we predict our new point will also be of the Diamond class.</p>
+<p><b>Mathematically</b>: Euclidean distance is defined by <span class="math">\(D = \sqrt{(\delta x)^2 + (\delta y)^2}\)</span>, where <span class="math">\(\delta x\)</span> is change in the x-direction and <span class="math">\(\delta y\)</span> is change in the y-direction. We can find the Euclidean distances from each point in our graph to our new point. Whichever three points have the smallest Euclidean distances to our new point are the three neighbors we should look at the classes of. After finding all Euclidean distances, we find that the three neighbors we should choose are the same as the ones we chose above, in the visual explanation. The respective Euclidean distances for these three points to our new point are <span class="math">\(\sqrt{1^2 + 1^2} = \sqrt{2}\)</span>, <span class="math">\(\sqrt{(-2)^2 + (-1)^2} = \sqrt{5}\)</span>, and <span class="math">\(\sqrt{0^2 + 3^2} = 3\)</span>, which are shorter than all other distances to the new point in the graph.</p>
+</details>
+
     </div>
 </div>
 
@@ -710,7 +726,7 @@
 
 <div class="subproblem">
     <h3 class="subproblem-id">Part 3)</h3>
-<p>Which one of the following is true about <span class="math">\(a_1\)</span> and <span class="math">\(b_1\)</span>(the slopes)?</p>
+<p>Which one of the following is true about <span class="math">\(a_1\)</span> and <span class="math">\(b_1\)</span>(the slopes), assuming that the initial slope is positive?</p>
 <div class="multiple-choices"><form><div class="choice"><label><input name="choice" class="choice" type="radio" /><p><span class="math">\(a_1 < b_1\)</span></p></label></div>
 <div class="choice"><label><input name="choice" class="choice" type="radio" /><p><span class="math">\(a_1 = b_1\)</span></p></label></div>
 <div class="choice"><label><input name="choice" class="choice" type="radio" /><p><span class="math">\(a_1 > b_1\)</span></p></label></div></form></div>
@@ -1007,13 +1023,13 @@
 <p>What is the (2,3) entry of the kernel matrix?</p>
 <p><span class="math">\(K_{23} = \)</span>
 <span class="inline-response-box">
-    <span id="answer-37f11b01-d0a4-49ac-b3e8-6f40c57b77ca" style="display: none">1</span>
-    <span id="button-37f11b01-d0a4-49ac-b3e8-6f40c57b77ca">
+    <span id="answer-7e5b8a90-8d19-4a86-a12a-3fdf0d39a638" style="display: none">1</span>
+    <span id="button-7e5b8a90-8d19-4a86-a12a-3fdf0d39a638">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-37f11b01-d0a4-49ac-b3e8-6f40c57b77ca').style.display = 'inline-block';
-                document.getElementById('button-37f11b01-d0a4-49ac-b3e8-6f40c57b77ca').style.display = 'none'
+                document.getElementById('answer-7e5b8a90-8d19-4a86-a12a-3fdf0d39a638').style.display = 'inline-block';
+                document.getElementById('button-7e5b8a90-8d19-4a86-a12a-3fdf0d39a638').style.display = 'none'
             "
         >
             Show Answer
@@ -1028,13 +1044,13 @@
 <p>Let <span class="math">\(\vec x = (1, 1, 0)^T\)</span> be a new point. What is <span class="math">\(H(\vec x)\)</span>?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-864bf2fc-8334-4f34-aa29-86d7701cfd2d" style="display: none">14</span>
-    <span id="button-864bf2fc-8334-4f34-aa29-86d7701cfd2d">
+    <span id="answer-cf05c7fd-ea67-46d2-9e32-05797b87dc33" style="display: none">14</span>
+    <span id="button-cf05c7fd-ea67-46d2-9e32-05797b87dc33">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-864bf2fc-8334-4f34-aa29-86d7701cfd2d').style.display = 'inline-block';
-                document.getElementById('button-864bf2fc-8334-4f34-aa29-86d7701cfd2d').style.display = 'none'
+                document.getElementById('answer-cf05c7fd-ea67-46d2-9e32-05797b87dc33').style.display = 'inline-block';
+                document.getElementById('button-cf05c7fd-ea67-46d2-9e32-05797b87dc33').style.display = 'none'
             "
         >
             Show Answer
@@ -1127,13 +1143,13 @@
 <p>Suppose <span class="math">\(\pr(Y = 1) = 0.5\)</span> and <span class="math">\(\pr(Y = 0) = 0.5\)</span>. What is the Bayes error with respect to this distribution?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-348354b5-fe8a-435b-9a3a-5238e187c2eb" style="display: none">0.25</span>
-    <span id="button-348354b5-fe8a-435b-9a3a-5238e187c2eb">
+    <span id="answer-061cbe81-9909-4928-83a5-ad81b532c92a" style="display: none">0.25</span>
+    <span id="button-061cbe81-9909-4928-83a5-ad81b532c92a">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-348354b5-fe8a-435b-9a3a-5238e187c2eb').style.display = 'inline-block';
-                document.getElementById('button-348354b5-fe8a-435b-9a3a-5238e187c2eb').style.display = 'none'
+                document.getElementById('answer-061cbe81-9909-4928-83a5-ad81b532c92a').style.display = 'inline-block';
+                document.getElementById('button-061cbe81-9909-4928-83a5-ad81b532c92a').style.display = 'none'
             "
         >
             Show Answer
@@ -1160,13 +1176,13 @@
 <p>Now suppose <span class="math">\(\pr(Y = 1) = 0.7\)</span> and <span class="math">\(\pr(Y = 0) = 0.3\)</span>. What is the Bayes error with respect to this distribution?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-eaddd496-b16d-4f6a-aa19-e0f45da1c032" style="display: none">0.29</span>
-    <span id="button-eaddd496-b16d-4f6a-aa19-e0f45da1c032">
+    <span id="answer-ea488a8c-ca85-4fc5-80f9-b05f63772f99" style="display: none">0.29</span>
+    <span id="button-ea488a8c-ca85-4fc5-80f9-b05f63772f99">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-eaddd496-b16d-4f6a-aa19-e0f45da1c032').style.display = 'inline-block';
-                document.getElementById('button-eaddd496-b16d-4f6a-aa19-e0f45da1c032').style.display = 'none'
+                document.getElementById('answer-ea488a8c-ca85-4fc5-80f9-b05f63772f99').style.display = 'inline-block';
+                document.getElementById('button-ea488a8c-ca85-4fc5-80f9-b05f63772f99').style.display = 'none'
             "
         >
             Show Answer
@@ -1222,13 +1238,13 @@
 <p>What is <span class="math">\(f(1.5)\)</span>?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-068c8de7-84e5-47b8-b188-b8166cc762d9" style="display: none">0.2</span>
-    <span id="button-068c8de7-84e5-47b8-b188-b8166cc762d9">
+    <span id="answer-66980f25-0bf0-4c69-9c0a-333da0be0194" style="display: none">0.2</span>
+    <span id="button-66980f25-0bf0-4c69-9c0a-333da0be0194">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-068c8de7-84e5-47b8-b188-b8166cc762d9').style.display = 'inline-block';
-                document.getElementById('button-068c8de7-84e5-47b8-b188-b8166cc762d9').style.display = 'none'
+                document.getElementById('answer-66980f25-0bf0-4c69-9c0a-333da0be0194').style.display = 'inline-block';
+                document.getElementById('button-66980f25-0bf0-4c69-9c0a-333da0be0194').style.display = 'none'
             "
         >
             Show Answer
@@ -1243,13 +1259,13 @@
 <p>What is <span class="math">\(f(7)\)</span>?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-0eb9e111-f38e-49f6-b169-5751771e0e5e" style="display: none">.05</span>
-    <span id="button-0eb9e111-f38e-49f6-b169-5751771e0e5e">
+    <span id="answer-3cd52983-010b-4e4f-ae0d-566575bd8d97" style="display: none">.05</span>
+    <span id="button-3cd52983-010b-4e4f-ae0d-566575bd8d97">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-0eb9e111-f38e-49f6-b169-5751771e0e5e').style.display = 'inline-block';
-                document.getElementById('button-0eb9e111-f38e-49f6-b169-5751771e0e5e').style.display = 'none'
+                document.getElementById('answer-3cd52983-010b-4e4f-ae0d-566575bd8d97').style.display = 'inline-block';
+                document.getElementById('button-3cd52983-010b-4e4f-ae0d-566575bd8d97').style.display = 'none'
             "
         >
             Show Answer
@@ -1300,13 +1316,13 @@
 <p>What is the largest value that <span class="math">\(f(\vec x)\)</span> can possibly have?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-291b7a95-2785-41c9-aa4b-e2750e5195a4" style="display: none">1/6</span>
-    <span id="button-291b7a95-2785-41c9-aa4b-e2750e5195a4">
+    <span id="answer-f40749b8-a448-4d2a-94a8-4d67d5fadc2e" style="display: none">1/6</span>
+    <span id="button-f40749b8-a448-4d2a-94a8-4d67d5fadc2e">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-291b7a95-2785-41c9-aa4b-e2750e5195a4').style.display = 'inline-block';
-                document.getElementById('button-291b7a95-2785-41c9-aa4b-e2750e5195a4').style.display = 'none'
+                document.getElementById('answer-f40749b8-a448-4d2a-94a8-4d67d5fadc2e').style.display = 'inline-block';
+                document.getElementById('button-f40749b8-a448-4d2a-94a8-4d67d5fadc2e').style.display = 'none'
             "
         >
             Show Answer
@@ -1400,13 +1416,13 @@
 <p>Suppose a Gaussian with a diagonal covariance matrix is fit to 200 points in <span class="math">\(\mathbb R^4\)</span> using the maximum likelihood estimators. How many parameters are estimated? Count each entry of <span class="math">\(\mu\)</span> and the covariance matrix that must be estimated as its own parameter.</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-2f144925-e5e3-40f7-9a01-2fe7def58a0a" style="display: none">8</span>
-    <span id="button-2f144925-e5e3-40f7-9a01-2fe7def58a0a">
+    <span id="answer-07c79db3-00ef-418f-bb5b-418ea9a5a022" style="display: none">8</span>
+    <span id="button-07c79db3-00ef-418f-bb5b-418ea9a5a022">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-2f144925-e5e3-40f7-9a01-2fe7def58a0a').style.display = 'inline-block';
-                document.getElementById('button-2f144925-e5e3-40f7-9a01-2fe7def58a0a').style.display = 'none'
+                document.getElementById('answer-07c79db3-00ef-418f-bb5b-418ea9a5a022').style.display = 'inline-block';
+                document.getElementById('button-07c79db3-00ef-418f-bb5b-418ea9a5a022').style.display = 'none'
             "
         >
             Show Answer
@@ -1573,13 +1589,13 @@
 <p>If Gaussian Naive Bayes is trained on this data, how many univariate Gaussians will be fit?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-d0fbde1e-7b20-4d6b-bfd0-b85ac131d15d" style="display: none">20</span>
-    <span id="button-d0fbde1e-7b20-4d6b-bfd0-b85ac131d15d">
+    <span id="answer-dbc11fee-cf60-46e8-9c96-83297369f9a9" style="display: none">20</span>
+    <span id="button-dbc11fee-cf60-46e8-9c96-83297369f9a9">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-d0fbde1e-7b20-4d6b-bfd0-b85ac131d15d').style.display = 'inline-block';
-                document.getElementById('button-d0fbde1e-7b20-4d6b-bfd0-b85ac131d15d').style.display = 'none'
+                document.getElementById('answer-dbc11fee-cf60-46e8-9c96-83297369f9a9').style.display = 'inline-block';
+                document.getElementById('button-dbc11fee-cf60-46e8-9c96-83297369f9a9').style.display = 'none'
             "
         >
             Show Answer
@@ -1735,13 +1751,13 @@
 <p>The density estimate within a particular bin of the histogram is 0.1. How many data points from <span class="math">\(\mathcal D\)</span> fall within that histogram bin?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-477e7a98-30a5-4a22-b705-8f870241980c" style="display: none">80</span>
-    <span id="button-477e7a98-30a5-4a22-b705-8f870241980c">
+    <span id="answer-e35a9b69-04f8-4f57-be00-1bcf98f93e3b" style="display: none">80</span>
+    <span id="button-e35a9b69-04f8-4f57-be00-1bcf98f93e3b">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-477e7a98-30a5-4a22-b705-8f870241980c').style.display = 'inline-block';
-                document.getElementById('button-477e7a98-30a5-4a22-b705-8f870241980c').style.display = 'none'
+                document.getElementById('answer-e35a9b69-04f8-4f57-be00-1bcf98f93e3b').style.display = 'inline-block';
+                document.getElementById('button-e35a9b69-04f8-4f57-be00-1bcf98f93e3b').style.display = 'none'
             "
         >
             Show Answer
@@ -1835,13 +1851,13 @@
 <p>Suppose a Gaussian with a diagonal covariance matrix is fit to 200 points in <span class="math">\(\mathbb R^4\)</span> using the maximum likelihood estimators. How many parameters are estimated? Count each entry of <span class="math">\(\vec\mu\)</span> and the covariance matrix that must be estimated as its own parameter (the off-diagonal elements of the covariance are zero, and shouldn't be included in your count).</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-eaa0f951-eac7-4e04-a8f6-5a50ecfb376b" style="display: none">8</span>
-    <span id="button-eaa0f951-eac7-4e04-a8f6-5a50ecfb376b">
+    <span id="answer-64ae5711-7b80-4c19-a644-1c2e8bb3efb5" style="display: none">8</span>
+    <span id="button-64ae5711-7b80-4c19-a644-1c2e8bb3efb5">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-eaa0f951-eac7-4e04-a8f6-5a50ecfb376b').style.display = 'inline-block';
-                document.getElementById('button-eaa0f951-eac7-4e04-a8f6-5a50ecfb376b').style.display = 'none'
+                document.getElementById('answer-64ae5711-7b80-4c19-a644-1c2e8bb3efb5').style.display = 'inline-block';
+                document.getElementById('button-64ae5711-7b80-4c19-a644-1c2e8bb3efb5').style.display = 'none'
             "
         >
             Show Answer
@@ -2128,13 +2144,13 @@
 <p>Let <span class="math">\(\vec x = (1, 2)^T\)</span>. What is <span class="math">\(H(\vec x)\)</span>?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-1cc14118-40ee-4414-8b46-76c1fa0bb7d4" style="display: none">3</span>
-    <span id="button-1cc14118-40ee-4414-8b46-76c1fa0bb7d4">
+    <span id="answer-08b0f852-70c2-434f-95f7-f1d9a83a1f7e" style="display: none">3</span>
+    <span id="button-08b0f852-70c2-434f-95f7-f1d9a83a1f7e">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-1cc14118-40ee-4414-8b46-76c1fa0bb7d4').style.display = 'inline-block';
-                document.getElementById('button-1cc14118-40ee-4414-8b46-76c1fa0bb7d4').style.display = 'none'
+                document.getElementById('answer-08b0f852-70c2-434f-95f7-f1d9a83a1f7e').style.display = 'inline-block';
+                document.getElementById('button-08b0f852-70c2-434f-95f7-f1d9a83a1f7e').style.display = 'none'
             "
         >
             Show Answer
@@ -2206,13 +2222,13 @@
 <p>What is the value of <span class="math">\(H\)</span> at the point <span class="math">\(\nvec{x}{4} = (0, 1)^T\)</span>?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-3afff5a1-f2e2-4e34-b17f-7080f4657f8e" style="display: none">0</span>
-    <span id="button-3afff5a1-f2e2-4e34-b17f-7080f4657f8e">
+    <span id="answer-160fb434-846b-46f7-9630-dae056968fb5" style="display: none">0</span>
+    <span id="button-160fb434-846b-46f7-9630-dae056968fb5">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-3afff5a1-f2e2-4e34-b17f-7080f4657f8e').style.display = 'inline-block';
-                document.getElementById('button-3afff5a1-f2e2-4e34-b17f-7080f4657f8e').style.display = 'none'
+                document.getElementById('answer-160fb434-846b-46f7-9630-dae056968fb5').style.display = 'inline-block';
+                document.getElementById('button-160fb434-846b-46f7-9630-dae056968fb5').style.display = 'none'
             "
         >
             Show Answer
@@ -2366,13 +2382,13 @@
 <p>What is the <b>total</b><i>square</i> loss of <span class="math">\(H\)</span> on this data set?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-0640b213-4679-4d38-b49c-dad36100cb13" style="display: none">11.25</span>
-    <span id="button-0640b213-4679-4d38-b49c-dad36100cb13">
+    <span id="answer-1ebfd4af-259b-440c-8675-a7f6072328a6" style="display: none">11.25</span>
+    <span id="button-1ebfd4af-259b-440c-8675-a7f6072328a6">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-0640b213-4679-4d38-b49c-dad36100cb13').style.display = 'inline-block';
-                document.getElementById('button-0640b213-4679-4d38-b49c-dad36100cb13').style.display = 'none'
+                document.getElementById('answer-1ebfd4af-259b-440c-8675-a7f6072328a6').style.display = 'inline-block';
+                document.getElementById('button-1ebfd4af-259b-440c-8675-a7f6072328a6').style.display = 'none'
             "
         >
             Show Answer
@@ -2387,13 +2403,13 @@
 <p>What is the <b>total</b><i>perceptron</i> loss of <span class="math">\(H\)</span> on this data set?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-5aae5b47-8ffb-4715-86ea-931a308443f1" style="display: none">1</span>
-    <span id="button-5aae5b47-8ffb-4715-86ea-931a308443f1">
+    <span id="answer-0a088d37-2e5e-4f39-a282-da9b95c6f37d" style="display: none">1</span>
+    <span id="button-0a088d37-2e5e-4f39-a282-da9b95c6f37d">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-5aae5b47-8ffb-4715-86ea-931a308443f1').style.display = 'inline-block';
-                document.getElementById('button-5aae5b47-8ffb-4715-86ea-931a308443f1').style.display = 'none'
+                document.getElementById('answer-0a088d37-2e5e-4f39-a282-da9b95c6f37d').style.display = 'inline-block';
+                document.getElementById('button-0a088d37-2e5e-4f39-a282-da9b95c6f37d').style.display = 'none'
             "
         >
             Show Answer
@@ -2408,13 +2424,13 @@
 <p>What is the <b>total</b><i>hinge</i> loss of <span class="math">\(H\)</span> on this data set?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-83eb5ad2-7330-42bd-842d-fec8e4cc0822" style="display: none">3.5</span>
-    <span id="button-83eb5ad2-7330-42bd-842d-fec8e4cc0822">
+    <span id="answer-6bef16bd-a670-436a-84ef-cb8170ff2dc1" style="display: none">3.5</span>
+    <span id="button-6bef16bd-a670-436a-84ef-cb8170ff2dc1">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-83eb5ad2-7330-42bd-842d-fec8e4cc0822').style.display = 'inline-block';
-                document.getElementById('button-83eb5ad2-7330-42bd-842d-fec8e4cc0822').style.display = 'none'
+                document.getElementById('answer-6bef16bd-a670-436a-84ef-cb8170ff2dc1').style.display = 'inline-block';
+                document.getElementById('button-6bef16bd-a670-436a-84ef-cb8170ff2dc1').style.display = 'none'
             "
         >
             Show Answer
@@ -2451,13 +2467,13 @@
 <p>What is the gradient of this function at the point <span class="math">\((0, 0)\)</span>?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-199c0d07-2ea8-484c-aeb5-c04c1e1ca802" style="display: none"><span class="math">\((2, 1)^T\)</span></span>
-    <span id="button-199c0d07-2ea8-484c-aeb5-c04c1e1ca802">
+    <span id="answer-d962da6b-d0f6-41a8-9e4d-acaaa2c300e0" style="display: none"><span class="math">\((2, 1)^T\)</span></span>
+    <span id="button-d962da6b-d0f6-41a8-9e4d-acaaa2c300e0">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-199c0d07-2ea8-484c-aeb5-c04c1e1ca802').style.display = 'inline-block';
-                document.getElementById('button-199c0d07-2ea8-484c-aeb5-c04c1e1ca802').style.display = 'none'
+                document.getElementById('answer-d962da6b-d0f6-41a8-9e4d-acaaa2c300e0').style.display = 'inline-block';
+                document.getElementById('button-d962da6b-d0f6-41a8-9e4d-acaaa2c300e0').style.display = 'none'
             "
         >
             Show Answer
@@ -2506,13 +2522,13 @@
 <p>Suppose that the initial weight vector is <span class="math">\(\vec w = (0, 0)^T\)</span> and that the learning rate <span class="math">\(\eta = 1\)</span>. What will be the weight vector after one iteration of subgradient descent?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-7d5f7180-914b-4f0e-a185-7505167c83fc" style="display: none"><span class="math">\((1, 2)^T\)</span></span>
-    <span id="button-7d5f7180-914b-4f0e-a185-7505167c83fc">
+    <span id="answer-1a618a74-bde9-46ee-a5b2-4be6f7b93c2a" style="display: none"><span class="math">\((1, 2)^T\)</span></span>
+    <span id="button-1a618a74-bde9-46ee-a5b2-4be6f7b93c2a">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-7d5f7180-914b-4f0e-a185-7505167c83fc').style.display = 'inline-block';
-                document.getElementById('button-7d5f7180-914b-4f0e-a185-7505167c83fc').style.display = 'none'
+                document.getElementById('answer-1a618a74-bde9-46ee-a5b2-4be6f7b93c2a').style.display = 'inline-block';
+                document.getElementById('button-1a618a74-bde9-46ee-a5b2-4be6f7b93c2a').style.display = 'none'
             "
         >
             Show Answer
@@ -2716,13 +2732,13 @@
 <p>What weight vector <i>is</i> the solution of the Hard SVM problem for this data set?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-42e69d15-6a96-4e5f-89da-2a6a73b2f618" style="display: none"><span class="math">\((3, 0, \frac{1}{4})^T\)</span></span>
-    <span id="button-42e69d15-6a96-4e5f-89da-2a6a73b2f618">
+    <span id="answer-827a854f-b30d-4794-86ab-7a0f964368d7" style="display: none"><span class="math">\((3, 0, \frac{1}{4})^T\)</span></span>
+    <span id="button-827a854f-b30d-4794-86ab-7a0f964368d7">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-42e69d15-6a96-4e5f-89da-2a6a73b2f618').style.display = 'inline-block';
-                document.getElementById('button-42e69d15-6a96-4e5f-89da-2a6a73b2f618').style.display = 'none'
+                document.getElementById('answer-827a854f-b30d-4794-86ab-7a0f964368d7').style.display = 'inline-block';
+                document.getElementById('button-827a854f-b30d-4794-86ab-7a0f964368d7').style.display = 'none'
             "
         >
             Show Answer
@@ -2756,13 +2772,13 @@
 <p>What is <span class="math">\(\frac{d}{d \vec w} f(\vec w)\)</span>?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-a92f3927-2b03-41a3-85e9-d9311ef211fe" style="display: none"><span class="math">\(\sum_{i=1}^n \nvec{x}{i} + 2 \vec w\)</span></span>
-    <span id="button-a92f3927-2b03-41a3-85e9-d9311ef211fe">
+    <span id="answer-2d666213-6e07-4dd7-a3dc-6a5ed0f11fcb" style="display: none"><span class="math">\(\sum_{i=1}^n \nvec{x}{i} + 2 \vec w\)</span></span>
+    <span id="button-2d666213-6e07-4dd7-a3dc-6a5ed0f11fcb">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-a92f3927-2b03-41a3-85e9-d9311ef211fe').style.display = 'inline-block';
-                document.getElementById('button-a92f3927-2b03-41a3-85e9-d9311ef211fe').style.display = 'none'
+                document.getElementById('answer-2d666213-6e07-4dd7-a3dc-6a5ed0f11fcb').style.display = 'inline-block';
+                document.getElementById('button-2d666213-6e07-4dd7-a3dc-6a5ed0f11fcb').style.display = 'none'
             "
         >
             Show Answer
@@ -2988,13 +3004,13 @@
 <p>Let <span class="math">\(\vec x = (1, 2, 1)^T\)</span>. What is <span class="math">\(H(\vec x)\)</span>?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-7ef647e0-4f07-4118-9a23-39e264484ed7" style="display: none"><span class="math">\(-3\)</span></span>
-    <span id="button-7ef647e0-4f07-4118-9a23-39e264484ed7">
+    <span id="answer-0a4427e8-ab17-4c2a-9f86-ac6d7054a28f" style="display: none"><span class="math">\(-3\)</span></span>
+    <span id="button-0a4427e8-ab17-4c2a-9f86-ac6d7054a28f">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-7ef647e0-4f07-4118-9a23-39e264484ed7').style.display = 'inline-block';
-                document.getElementById('button-7ef647e0-4f07-4118-9a23-39e264484ed7').style.display = 'none'
+                document.getElementById('answer-0a4427e8-ab17-4c2a-9f86-ac6d7054a28f').style.display = 'inline-block';
+                document.getElementById('button-0a4427e8-ab17-4c2a-9f86-ac6d7054a28f').style.display = 'none'
             "
         >
             Show Answer
@@ -3020,13 +3036,13 @@
 <p>What is the mean squared error of a least squares classifier trained on this data set (without regularization)? Your answer should be a number.</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-3fdd1061-4edd-4698-a546-3b454dfff518" style="display: none">0</span>
-    <span id="button-3fdd1061-4edd-4698-a546-3b454dfff518">
+    <span id="answer-4d4d5ccd-a84e-40c5-91d0-d4228a905c8c" style="display: none">0</span>
+    <span id="button-4d4d5ccd-a84e-40c5-91d0-d4228a905c8c">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-3fdd1061-4edd-4698-a546-3b454dfff518').style.display = 'inline-block';
-                document.getElementById('button-3fdd1061-4edd-4698-a546-3b454dfff518').style.display = 'none'
+                document.getElementById('answer-4d4d5ccd-a84e-40c5-91d0-d4228a905c8c').style.display = 'inline-block';
+                document.getElementById('button-4d4d5ccd-a84e-40c5-91d0-d4228a905c8c').style.display = 'none'
             "
         >
             Show Answer
@@ -3108,13 +3124,13 @@
 <p>What is the <b>total</b><i>square</i> loss of <span class="math">\(H\)</span> on this data set?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-aa0eca27-c874-4bab-9b2f-89026aaab215" style="display: none">13.5</span>
-    <span id="button-aa0eca27-c874-4bab-9b2f-89026aaab215">
+    <span id="answer-d473f4f0-fbc7-4a99-bf5a-dd56fadb07af" style="display: none">13.5</span>
+    <span id="button-d473f4f0-fbc7-4a99-bf5a-dd56fadb07af">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-aa0eca27-c874-4bab-9b2f-89026aaab215').style.display = 'inline-block';
-                document.getElementById('button-aa0eca27-c874-4bab-9b2f-89026aaab215').style.display = 'none'
+                document.getElementById('answer-d473f4f0-fbc7-4a99-bf5a-dd56fadb07af').style.display = 'inline-block';
+                document.getElementById('button-d473f4f0-fbc7-4a99-bf5a-dd56fadb07af').style.display = 'none'
             "
         >
             Show Answer
@@ -3129,13 +3145,13 @@
 <p>What is the <b>total</b><i>perceptron</i> loss of <span class="math">\(H\)</span> on this data set?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-fce842f1-fae4-4552-b40f-7515b1b31f62" style="display: none">1.5</span>
-    <span id="button-fce842f1-fae4-4552-b40f-7515b1b31f62">
+    <span id="answer-90152fa0-b55d-4060-b223-29f22d5b14ac" style="display: none">1.5</span>
+    <span id="button-90152fa0-b55d-4060-b223-29f22d5b14ac">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-fce842f1-fae4-4552-b40f-7515b1b31f62').style.display = 'inline-block';
-                document.getElementById('button-fce842f1-fae4-4552-b40f-7515b1b31f62').style.display = 'none'
+                document.getElementById('answer-90152fa0-b55d-4060-b223-29f22d5b14ac').style.display = 'inline-block';
+                document.getElementById('button-90152fa0-b55d-4060-b223-29f22d5b14ac').style.display = 'none'
             "
         >
             Show Answer
@@ -3150,13 +3166,13 @@
 <p>What is the <b>total</b><i>hinge</i> loss of <span class="math">\(H\)</span> on this data set?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-048ed9b1-ad46-4076-98ae-60dfacb0bc60" style="display: none">4</span>
-    <span id="button-048ed9b1-ad46-4076-98ae-60dfacb0bc60">
+    <span id="answer-799e5942-11c0-44e9-adc0-0a9d34d8d574" style="display: none">4</span>
+    <span id="button-799e5942-11c0-44e9-adc0-0a9d34d8d574">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-048ed9b1-ad46-4076-98ae-60dfacb0bc60').style.display = 'inline-block';
-                document.getElementById('button-048ed9b1-ad46-4076-98ae-60dfacb0bc60').style.display = 'none'
+                document.getElementById('answer-799e5942-11c0-44e9-adc0-0a9d34d8d574').style.display = 'inline-block';
+                document.getElementById('button-799e5942-11c0-44e9-adc0-0a9d34d8d574').style.display = 'none'
             "
         >
             Show Answer
@@ -3195,13 +3211,13 @@
 <p>What is the gradient of this function at the point <span class="math">\((1, 1)\)</span>?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-f6dcbebc-37a6-4447-aafc-86dd4c1bf456" style="display: none"><span class="math">\((-1,3)^T\)</span></span>
-    <span id="button-f6dcbebc-37a6-4447-aafc-86dd4c1bf456">
+    <span id="answer-ac223d47-f99f-4ffe-ae59-33e8a74e9e32" style="display: none"><span class="math">\((-1,3)^T\)</span></span>
+    <span id="button-ac223d47-f99f-4ffe-ae59-33e8a74e9e32">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-f6dcbebc-37a6-4447-aafc-86dd4c1bf456').style.display = 'inline-block';
-                document.getElementById('button-f6dcbebc-37a6-4447-aafc-86dd4c1bf456').style.display = 'none'
+                document.getElementById('answer-ac223d47-f99f-4ffe-ae59-33e8a74e9e32').style.display = 'inline-block';
+                document.getElementById('button-ac223d47-f99f-4ffe-ae59-33e8a74e9e32').style.display = 'none'
             "
         >
             Show Answer
@@ -3216,13 +3232,13 @@
 <p>What is the gradient of this function at the point <span class="math">\((-1, -1)\)</span>?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-22d5e9c0-64f0-45bb-b58f-b2ed1109ba88" style="display: none"><span class="math">\((-2,0)^T\)</span></span>
-    <span id="button-22d5e9c0-64f0-45bb-b58f-b2ed1109ba88">
+    <span id="answer-14be13eb-37b9-44ee-88a4-f430d0615961" style="display: none"><span class="math">\((-2,0)^T\)</span></span>
+    <span id="button-14be13eb-37b9-44ee-88a4-f430d0615961">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-22d5e9c0-64f0-45bb-b58f-b2ed1109ba88').style.display = 'inline-block';
-                document.getElementById('button-22d5e9c0-64f0-45bb-b58f-b2ed1109ba88').style.display = 'none'
+                document.getElementById('answer-14be13eb-37b9-44ee-88a4-f430d0615961').style.display = 'inline-block';
+                document.getElementById('button-14be13eb-37b9-44ee-88a4-f430d0615961').style.display = 'none'
             "
         >
             Show Answer
@@ -3287,13 +3303,13 @@
 <p>Suppose that the initial weight vector is <span class="math">\(\vec w = (0, 0)^T\)</span> and that the learning rate is <span class="math">\(\eta = 1\)</span>. What will be the weight vector after one iteration of subgradient descent?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-8d9f46b7-f632-4a8c-b7b5-fb9b0314ce49" style="display: none"><span class="math">\((1, 3)^T\)</span></span>
-    <span id="button-8d9f46b7-f632-4a8c-b7b5-fb9b0314ce49">
+    <span id="answer-be846985-27e7-43fe-897e-11cacd2b85b4" style="display: none"><span class="math">\((1, 3)^T\)</span></span>
+    <span id="button-be846985-27e7-43fe-897e-11cacd2b85b4">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-8d9f46b7-f632-4a8c-b7b5-fb9b0314ce49').style.display = 'inline-block';
-                document.getElementById('button-8d9f46b7-f632-4a8c-b7b5-fb9b0314ce49').style.display = 'none'
+                document.getElementById('answer-be846985-27e7-43fe-897e-11cacd2b85b4').style.display = 'inline-block';
+                document.getElementById('button-be846985-27e7-43fe-897e-11cacd2b85b4').style.display = 'none'
             "
         >
             Show Answer
@@ -3439,13 +3455,13 @@
 <p>What is <span class="math">\(\frac{d}{d \vec x} f(\vec x)\)</span>?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-b1471ddf-0808-4397-96a7-a6387e8821f6" style="display: none"><span class="math">\(2 A \vec x + \vec b\)</span></span>
-    <span id="button-b1471ddf-0808-4397-96a7-a6387e8821f6">
+    <span id="answer-05ca3100-5457-4917-9eda-a79e438da1c2" style="display: none"><span class="math">\(2 A \vec x + \vec b\)</span></span>
+    <span id="button-05ca3100-5457-4917-9eda-a79e438da1c2">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-b1471ddf-0808-4397-96a7-a6387e8821f6').style.display = 'inline-block';
-                document.getElementById('button-b1471ddf-0808-4397-96a7-a6387e8821f6').style.display = 'none'
+                document.getElementById('answer-05ca3100-5457-4917-9eda-a79e438da1c2').style.display = 'inline-block';
+                document.getElementById('button-05ca3100-5457-4917-9eda-a79e438da1c2').style.display = 'none'
             "
         >
             Show Answer
@@ -3526,13 +3542,13 @@
 <p>What is <span class="math">\(\pr(1 \leq X \leq 3 \given Y = 0)\)</span>?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-147c812b-a6f2-4fac-ae7f-1d550279977a" style="display: none">0.6</span>
-    <span id="button-147c812b-a6f2-4fac-ae7f-1d550279977a">
+    <span id="answer-207b750d-0dd5-4b1d-8c68-019fac01da67" style="display: none">0.6</span>
+    <span id="button-207b750d-0dd5-4b1d-8c68-019fac01da67">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-147c812b-a6f2-4fac-ae7f-1d550279977a').style.display = 'inline-block';
-                document.getElementById('button-147c812b-a6f2-4fac-ae7f-1d550279977a').style.display = 'none'
+                document.getElementById('answer-207b750d-0dd5-4b1d-8c68-019fac01da67').style.display = 'inline-block';
+                document.getElementById('button-207b750d-0dd5-4b1d-8c68-019fac01da67').style.display = 'none'
             "
         >
             Show Answer
@@ -3559,13 +3575,13 @@
 <p>Suppose again that <span class="math">\(\pr(Y = 1) = \pr(Y = 0) = 0.5\)</span>. What is the Bayes error with respect to this distribution?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-2ffe6f27-ec90-4dfe-b822-7550f9295f62" style="display: none">0.30</span>
-    <span id="button-2ffe6f27-ec90-4dfe-b822-7550f9295f62">
+    <span id="answer-8e332a6f-a3fe-4207-ad2a-f1611359e3c6" style="display: none">0.30</span>
+    <span id="button-8e332a6f-a3fe-4207-ad2a-f1611359e3c6">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-2ffe6f27-ec90-4dfe-b822-7550f9295f62').style.display = 'inline-block';
-                document.getElementById('button-2ffe6f27-ec90-4dfe-b822-7550f9295f62').style.display = 'none'
+                document.getElementById('answer-8e332a6f-a3fe-4207-ad2a-f1611359e3c6').style.display = 'inline-block';
+                document.getElementById('button-8e332a6f-a3fe-4207-ad2a-f1611359e3c6').style.display = 'none'
             "
         >
             Show Answer
@@ -3592,13 +3608,13 @@
 <p>Suppose again that <span class="math">\(\pr(Y = 1) = 0.7\)</span> and <span class="math">\(\pr(Y = 0) = 0.3\)</span>. What is the Bayes error with respect to this distribution?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-1e5e11c0-de0e-4c29-b686-e1eb1e292d1f" style="display: none">0.27</span>
-    <span id="button-1e5e11c0-de0e-4c29-b686-e1eb1e292d1f">
+    <span id="answer-9a158cbc-4431-410a-8d35-0867e9d82aea" style="display: none">0.27</span>
+    <span id="button-9a158cbc-4431-410a-8d35-0867e9d82aea">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-1e5e11c0-de0e-4c29-b686-e1eb1e292d1f').style.display = 'inline-block';
-                document.getElementById('button-1e5e11c0-de0e-4c29-b686-e1eb1e292d1f').style.display = 'none'
+                document.getElementById('answer-9a158cbc-4431-410a-8d35-0867e9d82aea').style.display = 'inline-block';
+                document.getElementById('button-9a158cbc-4431-410a-8d35-0867e9d82aea').style.display = 'none'
             "
         >
             Show Answer
@@ -3635,13 +3651,13 @@
 <p>What is the estimate of the Class 0 density at <span class="math">\(x = 3.5\)</span>? That is, what is the estimate for <span class="math">\(p(3.5 \given Y = 0)\)</span>?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-9f5b6a41-dc2e-4a28-9474-01dcd7808497" style="display: none">0.1</span>
-    <span id="button-9f5b6a41-dc2e-4a28-9474-01dcd7808497">
+    <span id="answer-a5cdd71f-e0c8-4e4b-81de-8b8a1ff2fd10" style="display: none">0.1</span>
+    <span id="button-a5cdd71f-e0c8-4e4b-81de-8b8a1ff2fd10">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-9f5b6a41-dc2e-4a28-9474-01dcd7808497').style.display = 'inline-block';
-                document.getElementById('button-9f5b6a41-dc2e-4a28-9474-01dcd7808497').style.display = 'none'
+                document.getElementById('answer-a5cdd71f-e0c8-4e4b-81de-8b8a1ff2fd10').style.display = 'inline-block';
+                document.getElementById('button-a5cdd71f-e0c8-4e4b-81de-8b8a1ff2fd10').style.display = 'none'
             "
         >
             Show Answer
@@ -3656,13 +3672,13 @@
 <p>Using the same histogram estimator, what is the estimate of <span class="math">\(\pr(Y = 1 \given x = 3.5)\)</span>?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-cdde64fb-afc4-4a1f-8c21-0a8cb04bc35e" style="display: none">0.5</span>
-    <span id="button-cdde64fb-afc4-4a1f-8c21-0a8cb04bc35e">
+    <span id="answer-b09a9b3b-5a85-4168-8c20-7ac4feb1b50e" style="display: none">0.5</span>
+    <span id="button-b09a9b3b-5a85-4168-8c20-7ac4feb1b50e">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-cdde64fb-afc4-4a1f-8c21-0a8cb04bc35e').style.display = 'inline-block';
-                document.getElementById('button-cdde64fb-afc4-4a1f-8c21-0a8cb04bc35e').style.display = 'none'
+                document.getElementById('answer-b09a9b3b-5a85-4168-8c20-7ac4feb1b50e').style.display = 'inline-block';
+                document.getElementById('button-b09a9b3b-5a85-4168-8c20-7ac4feb1b50e').style.display = 'none'
             "
         >
             Show Answer
@@ -3695,13 +3711,13 @@
 <p>Consider a new point <span class="math">\(\vec x = (1, 1, 1)\)</span>. What is <span class="math">\(H(\vec x)\)</span>?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-61d420cc-7f4b-4116-ba81-010a1889abac" style="display: none">50</span>
-    <span id="button-61d420cc-7f4b-4116-ba81-010a1889abac">
+    <span id="answer-3943bb06-ce94-4e30-bf08-cb3318cdc41a" style="display: none">50</span>
+    <span id="button-3943bb06-ce94-4e30-bf08-cb3318cdc41a">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-61d420cc-7f4b-4116-ba81-010a1889abac').style.display = 'inline-block';
-                document.getElementById('button-61d420cc-7f4b-4116-ba81-010a1889abac').style.display = 'none'
+                document.getElementById('answer-3943bb06-ce94-4e30-bf08-cb3318cdc41a').style.display = 'inline-block';
+                document.getElementById('button-3943bb06-ce94-4e30-bf08-cb3318cdc41a').style.display = 'none'
             "
         >
             Show Answer
@@ -3963,13 +3979,13 @@
             L(6, 5)\)</span>? Note that <span class="math">\(\mathcal L\)</span> is the likelihood, <i>not</i> the <i>log</i>-likelihood.</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-2a8170c8-54b4-4c5a-9ca8-133d0bf2290a" style="display: none"><span class="math">\(10^{-5}\)</span></span>
-    <span id="button-2a8170c8-54b4-4c5a-9ca8-133d0bf2290a">
+    <span id="answer-4b395781-a44f-4589-a2ab-b33852cc9380" style="display: none"><span class="math">\(10^{-5}\)</span></span>
+    <span id="button-4b395781-a44f-4589-a2ab-b33852cc9380">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-2a8170c8-54b4-4c5a-9ca8-133d0bf2290a').style.display = 'inline-block';
-                document.getElementById('button-2a8170c8-54b4-4c5a-9ca8-133d0bf2290a').style.display = 'none'
+                document.getElementById('answer-4b395781-a44f-4589-a2ab-b33852cc9380').style.display = 'inline-block';
+                document.getElementById('button-4b395781-a44f-4589-a2ab-b33852cc9380').style.display = 'none'
             "
         >
             Show Answer
@@ -3984,13 +4000,13 @@
 <p>What is <span class="math">\(\mathcal L(3, 2)\)</span>?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-22043a64-52db-429b-a446-6bb1e0e15603" style="display: none">0</span>
-    <span id="button-22043a64-52db-429b-a446-6bb1e0e15603">
+    <span id="answer-621fb923-04fe-4be9-bce3-eee04d3a4432" style="display: none">0</span>
+    <span id="button-621fb923-04fe-4be9-bce3-eee04d3a4432">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-22043a64-52db-429b-a446-6bb1e0e15603').style.display = 'inline-block';
-                document.getElementById('button-22043a64-52db-429b-a446-6bb1e0e15603').style.display = 'none'
+                document.getElementById('answer-621fb923-04fe-4be9-bce3-eee04d3a4432').style.display = 'inline-block';
+                document.getElementById('button-621fb923-04fe-4be9-bce3-eee04d3a4432').style.display = 'none'
             "
         >
             Show Answer
@@ -4005,13 +4021,13 @@
 <p>What are the maximum likelihood estimates of <span class="math">\(\alpha\)</span> and <span class="math">\(\beta\)</span>?</p>
 <p><span class="math">\(\alpha\)</span>: 
 <span class="inline-response-box">
-    <span id="answer-dc45271e-aa68-4faa-a3fa-ee03ce2781af" style="display: none">5</span>
-    <span id="button-dc45271e-aa68-4faa-a3fa-ee03ce2781af">
+    <span id="answer-8d286290-6a06-4c67-9cb8-7ad68d902259" style="display: none">5</span>
+    <span id="button-8d286290-6a06-4c67-9cb8-7ad68d902259">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-dc45271e-aa68-4faa-a3fa-ee03ce2781af').style.display = 'inline-block';
-                document.getElementById('button-dc45271e-aa68-4faa-a3fa-ee03ce2781af').style.display = 'none'
+                document.getElementById('answer-8d286290-6a06-4c67-9cb8-7ad68d902259').style.display = 'inline-block';
+                document.getElementById('button-8d286290-6a06-4c67-9cb8-7ad68d902259').style.display = 'none'
             "
         >
             Show Answer
@@ -4020,13 +4036,13 @@
 </span>
 <span class="math">\(\beta\)</span>: 
 <span class="inline-response-box">
-    <span id="answer-e1770ae2-1403-44bb-aca3-c5477595dc9f" style="display: none">4</span>
-    <span id="button-e1770ae2-1403-44bb-aca3-c5477595dc9f">
+    <span id="answer-a0642aa2-229b-4b27-aa4c-df691ab62a1b" style="display: none">4</span>
+    <span id="button-a0642aa2-229b-4b27-aa4c-df691ab62a1b">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-e1770ae2-1403-44bb-aca3-c5477595dc9f').style.display = 'inline-block';
-                document.getElementById('button-e1770ae2-1403-44bb-aca3-c5477595dc9f').style.display = 'none'
+                document.getElementById('answer-a0642aa2-229b-4b27-aa4c-df691ab62a1b').style.display = 'inline-block';
+                document.getElementById('button-a0642aa2-229b-4b27-aa4c-df691ab62a1b').style.display = 'none'
             "
         >
             Show Answer
@@ -4210,13 +4226,13 @@
 <p>What is the (1,2) entry of the sample covariance matrix?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-05d5120d-2746-4863-af19-e7d6df03067b" style="display: none">1</span>
-    <span id="button-05d5120d-2746-4863-af19-e7d6df03067b">
+    <span id="answer-cec70bcb-462a-4612-be70-0fbb0ce8a01a" style="display: none">1</span>
+    <span id="button-cec70bcb-462a-4612-be70-0fbb0ce8a01a">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-05d5120d-2746-4863-af19-e7d6df03067b').style.display = 'inline-block';
-                document.getElementById('button-05d5120d-2746-4863-af19-e7d6df03067b').style.display = 'none'
+                document.getElementById('answer-cec70bcb-462a-4612-be70-0fbb0ce8a01a').style.display = 'inline-block';
+                document.getElementById('button-cec70bcb-462a-4612-be70-0fbb0ce8a01a').style.display = 'none'
             "
         >
             Show Answer
@@ -4231,13 +4247,13 @@
 <p>What is the (2,2) entry of the sample covariance matrix?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-fbd84e5d-95b4-4659-aebf-cd45aae8bc44" style="display: none">8/6</span>
-    <span id="button-fbd84e5d-95b4-4659-aebf-cd45aae8bc44">
+    <span id="answer-9ea6f7c4-8084-4923-a98a-06806d16a8ec" style="display: none">8/6</span>
+    <span id="button-9ea6f7c4-8084-4923-a98a-06806d16a8ec">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-fbd84e5d-95b4-4659-aebf-cd45aae8bc44').style.display = 'inline-block';
-                document.getElementById('button-fbd84e5d-95b4-4659-aebf-cd45aae8bc44').style.display = 'none'
+                document.getElementById('answer-9ea6f7c4-8084-4923-a98a-06806d16a8ec').style.display = 'inline-block';
+                document.getElementById('button-9ea6f7c4-8084-4923-a98a-06806d16a8ec').style.display = 'none'
             "
         >
             Show Answer
@@ -4351,13 +4367,13 @@
 <p>Suppose that <span class="math">\(\pr(Y = 1) = \pr(Y = 0) = 0.5\)</span>. What is <span class="math">\(\pr(1 \leq X \leq 3)\)</span>?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-ae0c399a-3fad-4cc5-9f3f-b1e887ef77e5" style="display: none">0.3</span>
-    <span id="button-ae0c399a-3fad-4cc5-9f3f-b1e887ef77e5">
+    <span id="answer-5e6cb432-90e2-4a4c-afb0-83e0c4c2c4fd" style="display: none">0.3</span>
+    <span id="button-5e6cb432-90e2-4a4c-afb0-83e0c4c2c4fd">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-ae0c399a-3fad-4cc5-9f3f-b1e887ef77e5').style.display = 'inline-block';
-                document.getElementById('button-ae0c399a-3fad-4cc5-9f3f-b1e887ef77e5').style.display = 'none'
+                document.getElementById('answer-5e6cb432-90e2-4a4c-afb0-83e0c4c2c4fd').style.display = 'inline-block';
+                document.getElementById('button-5e6cb432-90e2-4a4c-afb0-83e0c4c2c4fd').style.display = 'none'
             "
         >
             Show Answer
@@ -4384,13 +4400,13 @@
 <p>Suppose again that <span class="math">\(\pr(Y = 1) = \pr(Y = 0) = 0.5\)</span>. What is the Bayes error with respect to this distribution?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-1e31745d-c113-4bd8-a8ae-404ac8ff68e8" style="display: none">0.25</span>
-    <span id="button-1e31745d-c113-4bd8-a8ae-404ac8ff68e8">
+    <span id="answer-b1e72cd5-d2cb-4811-bacf-8dfb9535cd59" style="display: none">0.25</span>
+    <span id="button-b1e72cd5-d2cb-4811-bacf-8dfb9535cd59">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-1e31745d-c113-4bd8-a8ae-404ac8ff68e8').style.display = 'inline-block';
-                document.getElementById('button-1e31745d-c113-4bd8-a8ae-404ac8ff68e8').style.display = 'none'
+                document.getElementById('answer-b1e72cd5-d2cb-4811-bacf-8dfb9535cd59').style.display = 'inline-block';
+                document.getElementById('button-b1e72cd5-d2cb-4811-bacf-8dfb9535cd59').style.display = 'none'
             "
         >
             Show Answer
@@ -4405,13 +4421,13 @@
 <p>Now suppose <span class="math">\(\pr(Y = 1) = 0.7\)</span> and <span class="math">\(\pr(Y = 0) = 0.3\)</span>. What is <span class="math">\(\pr(1 \leq X \leq 3)\)</span>?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-b31c26b6-0ea6-4e6b-a728-3a4c5b57ae55" style="display: none">0.34</span>
-    <span id="button-b31c26b6-0ea6-4e6b-a728-3a4c5b57ae55">
+    <span id="answer-28185a6b-6b06-43e5-a4ad-d4ca9a10e6de" style="display: none">0.34</span>
+    <span id="button-28185a6b-6b06-43e5-a4ad-d4ca9a10e6de">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-b31c26b6-0ea6-4e6b-a728-3a4c5b57ae55').style.display = 'inline-block';
-                document.getElementById('button-b31c26b6-0ea6-4e6b-a728-3a4c5b57ae55').style.display = 'none'
+                document.getElementById('answer-28185a6b-6b06-43e5-a4ad-d4ca9a10e6de').style.display = 'inline-block';
+                document.getElementById('button-28185a6b-6b06-43e5-a4ad-d4ca9a10e6de').style.display = 'none'
             "
         >
             Show Answer
@@ -4438,13 +4454,13 @@
 <p>Suppose again that <span class="math">\(\pr(Y = 1) = 0.7\)</span> and <span class="math">\(\pr(Y = 0) = 0.3\)</span>. What is the Bayes error with respect to this distribution?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-a075dbff-aa79-40e0-8c3d-0b978678c2f9" style="display: none">0.28</span>
-    <span id="button-a075dbff-aa79-40e0-8c3d-0b978678c2f9">
+    <span id="answer-691675f0-39c8-497c-97cc-d693caf8a0a8" style="display: none">0.28</span>
+    <span id="button-691675f0-39c8-497c-97cc-d693caf8a0a8">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-a075dbff-aa79-40e0-8c3d-0b978678c2f9').style.display = 'inline-block';
-                document.getElementById('button-a075dbff-aa79-40e0-8c3d-0b978678c2f9').style.display = 'none'
+                document.getElementById('answer-691675f0-39c8-497c-97cc-d693caf8a0a8').style.display = 'inline-block';
+                document.getElementById('button-691675f0-39c8-497c-97cc-d693caf8a0a8').style.display = 'none'
             "
         >
             Show Answer
@@ -4476,13 +4492,13 @@
 <p>What is the estimate of the Class 0 density at <span class="math">\(x = 0.6\)</span>? That is, what is the estimate <span class="math">\(\hat p(0.6 \given Y = 0)\)</span>?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-05e12483-7d6d-4c7f-a73f-0aa826a64fd1" style="display: none">5/3</span>
-    <span id="button-05e12483-7d6d-4c7f-a73f-0aa826a64fd1">
+    <span id="answer-90d00808-96d4-4818-95c2-25d18b0f3da4" style="display: none">5/3</span>
+    <span id="button-90d00808-96d4-4818-95c2-25d18b0f3da4">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-05e12483-7d6d-4c7f-a73f-0aa826a64fd1').style.display = 'inline-block';
-                document.getElementById('button-05e12483-7d6d-4c7f-a73f-0aa826a64fd1').style.display = 'none'
+                document.getElementById('answer-90d00808-96d4-4818-95c2-25d18b0f3da4').style.display = 'inline-block';
+                document.getElementById('button-90d00808-96d4-4818-95c2-25d18b0f3da4').style.display = 'none'
             "
         >
             Show Answer
@@ -4497,13 +4513,13 @@
 <p>Using the same histogram estimator, what is the estimate <span class="math">\(\hat\pr(Y = 1 \given x = 0.35)\)</span>?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-a5a0e9d4-d82b-4aed-ac0c-cdc033fb63b7" style="display: none">3/5 = 0.6</span>
-    <span id="button-a5a0e9d4-d82b-4aed-ac0c-cdc033fb63b7">
+    <span id="answer-7da0db3b-2163-4aff-a08b-7903edad0e31" style="display: none">3/5 = 0.6</span>
+    <span id="button-7da0db3b-2163-4aff-a08b-7903edad0e31">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-a5a0e9d4-d82b-4aed-ac0c-cdc033fb63b7').style.display = 'inline-block';
-                document.getElementById('button-a5a0e9d4-d82b-4aed-ac0c-cdc033fb63b7').style.display = 'none'
+                document.getElementById('answer-7da0db3b-2163-4aff-a08b-7903edad0e31').style.display = 'inline-block';
+                document.getElementById('button-7da0db3b-2163-4aff-a08b-7903edad0e31').style.display = 'none'
             "
         >
             Show Answer
@@ -4518,13 +4534,13 @@
 <p>What is the estimate of the marginal density of <span class="math">\(x\)</span> at <span class="math">\(x = 0.1\)</span>? That is, what is <span class="math">\(\hat p(0.1)\)</span>?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-89906cfa-dc3e-4e02-bd5c-0b585e3e7841" style="display: none">7/(19*0.25) = 1.47</span>
-    <span id="button-89906cfa-dc3e-4e02-bd5c-0b585e3e7841">
+    <span id="answer-09db6ce1-596c-4bca-97bc-30fc089a7ca0" style="display: none">7/(19*0.25) = 1.47</span>
+    <span id="button-09db6ce1-596c-4bca-97bc-30fc089a7ca0">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-89906cfa-dc3e-4e02-bd5c-0b585e3e7841').style.display = 'inline-block';
-                document.getElementById('button-89906cfa-dc3e-4e02-bd5c-0b585e3e7841').style.display = 'none'
+                document.getElementById('answer-09db6ce1-596c-4bca-97bc-30fc089a7ca0').style.display = 'inline-block';
+                document.getElementById('button-09db6ce1-596c-4bca-97bc-30fc089a7ca0').style.display = 'none'
             "
         >
             Show Answer
@@ -4541,13 +4557,13 @@
             \]</div>
 <p>
 <span class="inline-response-box">
-    <span id="answer-8329f391-cc1f-42e4-ab7c-6a143c39c67a" style="display: none">1</span>
-    <span id="button-8329f391-cc1f-42e4-ab7c-6a143c39c67a">
+    <span id="answer-11a4e1ee-5d51-4d3e-85b4-e4c976a38da0" style="display: none">1</span>
+    <span id="button-11a4e1ee-5d51-4d3e-85b4-e4c976a38da0">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-8329f391-cc1f-42e4-ab7c-6a143c39c67a').style.display = 'inline-block';
-                document.getElementById('button-8329f391-cc1f-42e4-ab7c-6a143c39c67a').style.display = 'none'
+                document.getElementById('answer-11a4e1ee-5d51-4d3e-85b4-e4c976a38da0').style.display = 'inline-block';
+                document.getElementById('button-11a4e1ee-5d51-4d3e-85b4-e4c976a38da0').style.display = 'none'
             "
         >
             Show Answer
@@ -4575,13 +4591,13 @@
 <p>Consider a new point <span class="math">\(\vec x = (2, 0, 1)^T\)</span>. What is <span class="math">\(H(\vec x)\)</span>?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-b5e46108-0a2e-4e88-b7c9-653f9638fa8b" style="display: none">37</span>
-    <span id="button-b5e46108-0a2e-4e88-b7c9-653f9638fa8b">
+    <span id="answer-fbfee5f0-24e9-4194-b35e-ca65aee48f50" style="display: none">37</span>
+    <span id="button-fbfee5f0-24e9-4194-b35e-ca65aee48f50">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-b5e46108-0a2e-4e88-b7c9-653f9638fa8b').style.display = 'inline-block';
-                document.getElementById('button-b5e46108-0a2e-4e88-b7c9-653f9638fa8b').style.display = 'none'
+                document.getElementById('answer-fbfee5f0-24e9-4194-b35e-ca65aee48f50').style.display = 'inline-block';
+                document.getElementById('button-fbfee5f0-24e9-4194-b35e-ca65aee48f50').style.display = 'none'
             "
         >
             Show Answer
@@ -4615,13 +4631,13 @@
 <p>What is the (1,3) entry of the sample covariance matrix?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-360ac226-f2ce-4f64-9d20-6c238ecd2eb0" style="display: none">9/4</span>
-    <span id="button-360ac226-f2ce-4f64-9d20-6c238ecd2eb0">
+    <span id="answer-3c7a0866-02ee-4b93-be39-f0f39614bc9b" style="display: none">9/4</span>
+    <span id="button-3c7a0866-02ee-4b93-be39-f0f39614bc9b">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-360ac226-f2ce-4f64-9d20-6c238ecd2eb0').style.display = 'inline-block';
-                document.getElementById('button-360ac226-f2ce-4f64-9d20-6c238ecd2eb0').style.display = 'none'
+                document.getElementById('answer-3c7a0866-02ee-4b93-be39-f0f39614bc9b').style.display = 'inline-block';
+                document.getElementById('button-3c7a0866-02ee-4b93-be39-f0f39614bc9b').style.display = 'none'
             "
         >
             Show Answer
@@ -4636,13 +4652,13 @@
 <p>What is the (1,2) entry of the sample covariance matrix?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-9f8d9232-6432-4795-aa19-fd8ac1edd366" style="display: none">-3/4</span>
-    <span id="button-9f8d9232-6432-4795-aa19-fd8ac1edd366">
+    <span id="answer-8a4a4052-8ce3-460f-b9ca-a9c7e98ecbc1" style="display: none">-3/4</span>
+    <span id="button-8a4a4052-8ce3-460f-b9ca-a9c7e98ecbc1">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-9f8d9232-6432-4795-aa19-fd8ac1edd366').style.display = 'inline-block';
-                document.getElementById('button-9f8d9232-6432-4795-aa19-fd8ac1edd366').style.display = 'none'
+                document.getElementById('answer-8a4a4052-8ce3-460f-b9ca-a9c7e98ecbc1').style.display = 'inline-block';
+                document.getElementById('button-8a4a4052-8ce3-460f-b9ca-a9c7e98ecbc1').style.display = 'none'
             "
         >
             Show Answer
@@ -4770,13 +4786,13 @@
             L(0, 2)\)</span>? Note that <span class="math">\(\mathcal L\)</span> is the likelihood, <i>not</i> the <i>log</i>-likelihood.</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-46e4e73e-34e3-4b62-9256-519d12b5548a" style="display: none">0</span>
-    <span id="button-46e4e73e-34e3-4b62-9256-519d12b5548a">
+    <span id="answer-861c164b-7100-48b5-9f78-8e40027c37b2" style="display: none">0</span>
+    <span id="button-861c164b-7100-48b5-9f78-8e40027c37b2">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-46e4e73e-34e3-4b62-9256-519d12b5548a').style.display = 'inline-block';
-                document.getElementById('button-46e4e73e-34e3-4b62-9256-519d12b5548a').style.display = 'none'
+                document.getElementById('answer-861c164b-7100-48b5-9f78-8e40027c37b2').style.display = 'inline-block';
+                document.getElementById('button-861c164b-7100-48b5-9f78-8e40027c37b2').style.display = 'none'
             "
         >
             Show Answer
@@ -4791,13 +4807,13 @@
 <p>Let <span class="math">\(\mathcal X = \{0, 1, 2\}\)</span> be the same data set as in the previous part. What is <span class="math">\(\mathcal L(0, 4)\)</span>?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-a16f0431-5725-4ee8-9ff7-2d361e1dd2bf" style="display: none">3/64 = 0.0468</span>
-    <span id="button-a16f0431-5725-4ee8-9ff7-2d361e1dd2bf">
+    <span id="answer-1c55b029-baf8-4d1b-9619-36e548647255" style="display: none">3/64 = 0.0468</span>
+    <span id="button-1c55b029-baf8-4d1b-9619-36e548647255">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-a16f0431-5725-4ee8-9ff7-2d361e1dd2bf').style.display = 'inline-block';
-                document.getElementById('button-a16f0431-5725-4ee8-9ff7-2d361e1dd2bf').style.display = 'none'
+                document.getElementById('answer-1c55b029-baf8-4d1b-9619-36e548647255').style.display = 'inline-block';
+                document.getElementById('button-1c55b029-baf8-4d1b-9619-36e548647255').style.display = 'none'
             "
         >
             Show Answer
@@ -4812,13 +4828,13 @@
 <p>Now let <span class="math">\(\mathcal X = \{6, 7\}\)</span> be a new data set of just two points. What are the maximum likelihood estimates of <span class="math">\(\alpha\)</span> and <span class="math">\(\beta\)</span> with respect to this data? Remember, <span class="math">\(\beta > 0\)</span>.</p>
 <p><span class="math">\(\alpha\)</span>: 
 <span class="inline-response-box">
-    <span id="answer-a63d5ad6-7cc7-44ba-b3f4-25f49e3929f7" style="display: none">6</span>
-    <span id="button-a63d5ad6-7cc7-44ba-b3f4-25f49e3929f7">
+    <span id="answer-d16a3933-3d06-461f-8ff9-781a9cecfad8" style="display: none">6</span>
+    <span id="button-d16a3933-3d06-461f-8ff9-781a9cecfad8">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-a63d5ad6-7cc7-44ba-b3f4-25f49e3929f7').style.display = 'inline-block';
-                document.getElementById('button-a63d5ad6-7cc7-44ba-b3f4-25f49e3929f7').style.display = 'none'
+                document.getElementById('answer-d16a3933-3d06-461f-8ff9-781a9cecfad8').style.display = 'inline-block';
+                document.getElementById('button-d16a3933-3d06-461f-8ff9-781a9cecfad8').style.display = 'none'
             "
         >
             Show Answer
@@ -4827,13 +4843,13 @@
 </span>
 <span class="math">\(\beta\)</span>: 
 <span class="inline-response-box">
-    <span id="answer-916b73fc-30b2-4f8d-b78e-f735279999c6" style="display: none">3</span>
-    <span id="button-916b73fc-30b2-4f8d-b78e-f735279999c6">
+    <span id="answer-4284f87f-8bb9-4184-8ba0-3f98ca4fba37" style="display: none">3</span>
+    <span id="button-4284f87f-8bb9-4184-8ba0-3f98ca4fba37">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-916b73fc-30b2-4f8d-b78e-f735279999c6').style.display = 'inline-block';
-                document.getElementById('button-916b73fc-30b2-4f8d-b78e-f735279999c6').style.display = 'none'
+                document.getElementById('answer-4284f87f-8bb9-4184-8ba0-3f98ca4fba37').style.display = 'inline-block';
+                document.getElementById('button-4284f87f-8bb9-4184-8ba0-3f98ca4fba37').style.display = 'none'
             "
         >
             Show Answer
@@ -4946,13 +4962,13 @@
 <p>If these estimates are used in place of the true class-conditional densities in the Bayes classifier, what will be the training error of the classifier? That is, what percentage of the data above will be misclassified? You may leave your answer as a fraction or a decimal.</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-251be4e1-e706-463a-bf8c-5028c56b393d" style="display: none">4/14 = .2857</span>
-    <span id="button-251be4e1-e706-463a-bf8c-5028c56b393d">
+    <span id="answer-9aa8e060-d3cf-4880-b8f4-db58110f3a87" style="display: none">4/14 = .2857</span>
+    <span id="button-9aa8e060-d3cf-4880-b8f4-db58110f3a87">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-251be4e1-e706-463a-bf8c-5028c56b393d').style.display = 'inline-block';
-                document.getElementById('button-251be4e1-e706-463a-bf8c-5028c56b393d').style.display = 'none'
+                document.getElementById('answer-9aa8e060-d3cf-4880-b8f4-db58110f3a87').style.display = 'inline-block';
+                document.getElementById('button-9aa8e060-d3cf-4880-b8f4-db58110f3a87').style.display = 'none'
             "
         >
             Show Answer

@@ -558,7 +558,23 @@ quarter to quarter, and so the sample exam may not be a perfect match for the to
         <div class="problem">
     <div class="problem-body">
 <p>Consider the data set of diamonds and circles shown below. Suppose a <span class="math">\(k\)</span>-nn classifier is used to predict the label of the new point marked by <span class="math">\(\times\)</span>, with <span class="math">\(k = 3\)</span>. What will be the prediction? You may assume that the Euclidean distance is used.</p>
-<center><div class="image"><img src="images/018/data.png" /></div></center>
+<center><div class="image"><img src="images/018/data-no-soln.PNG" /></div></center>
+<details>
+    <summary>Solution</summary>
+<p>The new point will be classified as a Diamond.</p>
+<p>To classify a point with <span class="math">\(k\)</span>-nn, we examine the <span class="math">\(k\)</span>(in this case, <span class="math">\(k = 3\)</span>) nearest "neighbors" to whichever point we want to classify. Then, whichever class appears more among those neighbors, we'll predict our new point is part of that class too.</p>
+<p>So, what are the three neighbors closest to our new point? Since we assume Euclidean distance (and not some other type of distance, like Manhattan distance), this problem becomes fairly easy to solve from first glance.</p>
+<p>Graphically: the three nearest points are the red Diamond to the upper-right of our new point, the blue Circle to the lower-left of our new point, and the red Diamond directly above our new point. The diamond class is more common among the three neighbors, so we predict our new point will also be of the Diamond class.</p>
+<p>Mathematically: Euclidean distance is defined by <span class="math">\(D = \sqrt{(\delta x)^2 + (\delta y)^2}\)</span>, where <span class="math">\(\delta x\)</span> is change in the x-direction and <span class="math">\(\delta y\)</span> is change in the y-direction. We can find the Euclidean distances from each point in our graph to our new point. Whichever three points have the smallest Euclidean distances are the three neighbors we should look at the classes of. After finding all Euclidean distances, we find that the three neighbors we should choose are the same as the ones we chose above, in the visual explanation. The respective Euclidean distances for these three points are <span class="math">\(\sqrt{1^2 + 1^2} = \sqrt{2}\)</span>, <span class="math">\(\sqrt{(-1)^2 + (-2)^2} = \sqrt{5}\)</span>, and <span class="math">\(\sqrt{0^2 + 3^2} = 3\)</span>, which are shorter than all other distances to the new point in the graph. As an aside, the idea behind <span class="math">\(k\)</span>-nn is that we assume a property that if two points are similar in location (i.e. they are near each other), then they are likely similar in class. So, <span class="math">\(k\)</span>-nn is valuable in situations where we have data that is very spatially correlated (ex: predicting price of a new house as "high" or "low" depending on other house prices in the area.)</p>
+</details>
+
+<details>
+    <summary>Solution</summary>
+<p>To classify a point with <span class="math">\(k\)</span>-nn, we examine the <span class="math">\(k\)</span>(in this case, <span class="math">\(k = 3)\)</span> nearest neighbors to whichever point we want to classify. Then, whichever class appears more among those neighbors, we'll predict our new point is part of that class too.</p>
+<p><b>Graphically</b>: The three nearest points are the red Diamond to the upper-right of our new point, the blue Circle to the lower-left of our new point, and the red Diamond directly above our new point. The diamond class is more common among the three neighbors, so we predict our new point will also be of the Diamond class.</p>
+<p><b>Mathematically</b>: Euclidean distance is defined by <span class="math">\(D = \sqrt{(\delta x)^2 + (\delta y)^2}\)</span>, where <span class="math">\(\delta x\)</span> is change in the x-direction and <span class="math">\(\delta y\)</span> is change in the y-direction. We can find the Euclidean distances from each point in our graph to our new point. Whichever three points have the smallest Euclidean distances to our new point are the three neighbors we should look at the classes of. After finding all Euclidean distances, we find that the three neighbors we should choose are the same as the ones we chose above, in the visual explanation. The respective Euclidean distances for these three points to our new point are <span class="math">\(\sqrt{1^2 + 1^2} = \sqrt{2}\)</span>, <span class="math">\(\sqrt{(-2)^2 + (-1)^2} = \sqrt{5}\)</span>, and <span class="math">\(\sqrt{0^2 + 3^2} = 3\)</span>, which are shorter than all other distances to the new point in the graph.</p>
+</details>
+
     </div>
 </div>
 
@@ -625,7 +641,7 @@ quarter to quarter, and so the sample exam may not be a perfect match for the to
 
 <div class="subproblem">
     <h3 class="subproblem-id">Part 3)</h3>
-<p>Which one of the following is true about <span class="math">\(a_1\)</span> and <span class="math">\(b_1\)</span>(the slopes)?</p>
+<p>Which one of the following is true about <span class="math">\(a_1\)</span> and <span class="math">\(b_1\)</span>(the slopes), assuming that the initial slope is positive?</p>
 <div class="multiple-choices"><form><div class="choice"><label><input name="choice" class="choice" type="radio" /><p><span class="math">\(a_1 < b_1\)</span></p></label></div>
 <div class="choice"><label><input name="choice" class="choice" type="radio" /><p><span class="math">\(a_1 = b_1\)</span></p></label></div>
 <div class="choice"><label><input name="choice" class="choice" type="radio" /><p><span class="math">\(a_1 > b_1\)</span></p></label></div></form></div>
@@ -984,13 +1000,13 @@ quarter to quarter, and so the sample exam may not be a perfect match for the to
 <p>Let <span class="math">\(\vec x = (1, 2)^T\)</span>. What is <span class="math">\(H(\vec x)\)</span>?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-5fc64c01-25ba-43fd-96fc-1ebdbafc9141" style="display: none">3</span>
-    <span id="button-5fc64c01-25ba-43fd-96fc-1ebdbafc9141">
+    <span id="answer-bba2415e-27f7-41e6-8309-774da50a17f9" style="display: none">3</span>
+    <span id="button-bba2415e-27f7-41e6-8309-774da50a17f9">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-5fc64c01-25ba-43fd-96fc-1ebdbafc9141').style.display = 'inline-block';
-                document.getElementById('button-5fc64c01-25ba-43fd-96fc-1ebdbafc9141').style.display = 'none'
+                document.getElementById('answer-bba2415e-27f7-41e6-8309-774da50a17f9').style.display = 'inline-block';
+                document.getElementById('button-bba2415e-27f7-41e6-8309-774da50a17f9').style.display = 'none'
             "
         >
             Show Answer
@@ -1062,13 +1078,13 @@ quarter to quarter, and so the sample exam may not be a perfect match for the to
 <p>What is the value of <span class="math">\(H\)</span> at the point <span class="math">\(\nvec{x}{4} = (0, 1)^T\)</span>?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-5ce0989b-0c5e-47e0-937e-8ec39e7cd76d" style="display: none">0</span>
-    <span id="button-5ce0989b-0c5e-47e0-937e-8ec39e7cd76d">
+    <span id="answer-af98ffc3-5265-4842-82a6-b67610f4a8cf" style="display: none">0</span>
+    <span id="button-af98ffc3-5265-4842-82a6-b67610f4a8cf">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-5ce0989b-0c5e-47e0-937e-8ec39e7cd76d').style.display = 'inline-block';
-                document.getElementById('button-5ce0989b-0c5e-47e0-937e-8ec39e7cd76d').style.display = 'none'
+                document.getElementById('answer-af98ffc3-5265-4842-82a6-b67610f4a8cf').style.display = 'inline-block';
+                document.getElementById('button-af98ffc3-5265-4842-82a6-b67610f4a8cf').style.display = 'none'
             "
         >
             Show Answer
@@ -1222,13 +1238,13 @@ quarter to quarter, and so the sample exam may not be a perfect match for the to
 <p>What is the <b>total</b><i>square</i> loss of <span class="math">\(H\)</span> on this data set?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-9f475eb9-d049-41ea-8856-6ca3c6bc168d" style="display: none">11.25</span>
-    <span id="button-9f475eb9-d049-41ea-8856-6ca3c6bc168d">
+    <span id="answer-b45c5e1b-c29d-4b6f-96d5-e3375a66da0e" style="display: none">11.25</span>
+    <span id="button-b45c5e1b-c29d-4b6f-96d5-e3375a66da0e">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-9f475eb9-d049-41ea-8856-6ca3c6bc168d').style.display = 'inline-block';
-                document.getElementById('button-9f475eb9-d049-41ea-8856-6ca3c6bc168d').style.display = 'none'
+                document.getElementById('answer-b45c5e1b-c29d-4b6f-96d5-e3375a66da0e').style.display = 'inline-block';
+                document.getElementById('button-b45c5e1b-c29d-4b6f-96d5-e3375a66da0e').style.display = 'none'
             "
         >
             Show Answer
@@ -1243,13 +1259,13 @@ quarter to quarter, and so the sample exam may not be a perfect match for the to
 <p>What is the <b>total</b><i>perceptron</i> loss of <span class="math">\(H\)</span> on this data set?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-bee12504-de0c-4937-8d81-f53cd5378d2b" style="display: none">1</span>
-    <span id="button-bee12504-de0c-4937-8d81-f53cd5378d2b">
+    <span id="answer-96533e82-ffff-4254-aa06-60a1fbe38c29" style="display: none">1</span>
+    <span id="button-96533e82-ffff-4254-aa06-60a1fbe38c29">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-bee12504-de0c-4937-8d81-f53cd5378d2b').style.display = 'inline-block';
-                document.getElementById('button-bee12504-de0c-4937-8d81-f53cd5378d2b').style.display = 'none'
+                document.getElementById('answer-96533e82-ffff-4254-aa06-60a1fbe38c29').style.display = 'inline-block';
+                document.getElementById('button-96533e82-ffff-4254-aa06-60a1fbe38c29').style.display = 'none'
             "
         >
             Show Answer
@@ -1264,13 +1280,13 @@ quarter to quarter, and so the sample exam may not be a perfect match for the to
 <p>What is the <b>total</b><i>hinge</i> loss of <span class="math">\(H\)</span> on this data set?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-397c3408-c5f8-4e5c-aba4-9069e11edf3f" style="display: none">3.5</span>
-    <span id="button-397c3408-c5f8-4e5c-aba4-9069e11edf3f">
+    <span id="answer-a68ccc50-a537-4433-8d1a-724bfe49e904" style="display: none">3.5</span>
+    <span id="button-a68ccc50-a537-4433-8d1a-724bfe49e904">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-397c3408-c5f8-4e5c-aba4-9069e11edf3f').style.display = 'inline-block';
-                document.getElementById('button-397c3408-c5f8-4e5c-aba4-9069e11edf3f').style.display = 'none'
+                document.getElementById('answer-a68ccc50-a537-4433-8d1a-724bfe49e904').style.display = 'inline-block';
+                document.getElementById('button-a68ccc50-a537-4433-8d1a-724bfe49e904').style.display = 'none'
             "
         >
             Show Answer
@@ -1307,13 +1323,13 @@ quarter to quarter, and so the sample exam may not be a perfect match for the to
 <p>What is the gradient of this function at the point <span class="math">\((0, 0)\)</span>?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-9640c447-2e3d-48dc-b0da-419ac9d31baf" style="display: none"><span class="math">\((2, 1)^T\)</span></span>
-    <span id="button-9640c447-2e3d-48dc-b0da-419ac9d31baf">
+    <span id="answer-1cb2458a-38b2-4fd0-8093-2b84f62fe5a4" style="display: none"><span class="math">\((2, 1)^T\)</span></span>
+    <span id="button-1cb2458a-38b2-4fd0-8093-2b84f62fe5a4">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-9640c447-2e3d-48dc-b0da-419ac9d31baf').style.display = 'inline-block';
-                document.getElementById('button-9640c447-2e3d-48dc-b0da-419ac9d31baf').style.display = 'none'
+                document.getElementById('answer-1cb2458a-38b2-4fd0-8093-2b84f62fe5a4').style.display = 'inline-block';
+                document.getElementById('button-1cb2458a-38b2-4fd0-8093-2b84f62fe5a4').style.display = 'none'
             "
         >
             Show Answer
@@ -1362,13 +1378,13 @@ quarter to quarter, and so the sample exam may not be a perfect match for the to
 <p>Suppose that the initial weight vector is <span class="math">\(\vec w = (0, 0)^T\)</span> and that the learning rate <span class="math">\(\eta = 1\)</span>. What will be the weight vector after one iteration of subgradient descent?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-0330f26b-2f42-478e-b76b-ff5385f1f050" style="display: none"><span class="math">\((1, 2)^T\)</span></span>
-    <span id="button-0330f26b-2f42-478e-b76b-ff5385f1f050">
+    <span id="answer-b7f588d5-5037-489d-a972-7e39e0423e9f" style="display: none"><span class="math">\((1, 2)^T\)</span></span>
+    <span id="button-b7f588d5-5037-489d-a972-7e39e0423e9f">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-0330f26b-2f42-478e-b76b-ff5385f1f050').style.display = 'inline-block';
-                document.getElementById('button-0330f26b-2f42-478e-b76b-ff5385f1f050').style.display = 'none'
+                document.getElementById('answer-b7f588d5-5037-489d-a972-7e39e0423e9f').style.display = 'inline-block';
+                document.getElementById('button-b7f588d5-5037-489d-a972-7e39e0423e9f').style.display = 'none'
             "
         >
             Show Answer
@@ -1533,13 +1549,13 @@ quarter to quarter, and so the sample exam may not be a perfect match for the to
 <p>What weight vector <i>is</i> the solution of the Hard SVM problem for this data set?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-e5ebeb1f-34ab-4198-80a1-688c5f5ba7eb" style="display: none"><span class="math">\((3, 0, \frac{1}{4})^T\)</span></span>
-    <span id="button-e5ebeb1f-34ab-4198-80a1-688c5f5ba7eb">
+    <span id="answer-1b2b5975-cfd9-414f-8056-e7504a8756e3" style="display: none"><span class="math">\((3, 0, \frac{1}{4})^T\)</span></span>
+    <span id="button-1b2b5975-cfd9-414f-8056-e7504a8756e3">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-e5ebeb1f-34ab-4198-80a1-688c5f5ba7eb').style.display = 'inline-block';
-                document.getElementById('button-e5ebeb1f-34ab-4198-80a1-688c5f5ba7eb').style.display = 'none'
+                document.getElementById('answer-1b2b5975-cfd9-414f-8056-e7504a8756e3').style.display = 'inline-block';
+                document.getElementById('button-1b2b5975-cfd9-414f-8056-e7504a8756e3').style.display = 'none'
             "
         >
             Show Answer
@@ -1573,13 +1589,13 @@ quarter to quarter, and so the sample exam may not be a perfect match for the to
 <p>What is <span class="math">\(\frac{d}{d \vec w} f(\vec w)\)</span>?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-fe40d30f-7a99-4e8d-9dc4-2df6c8ed2f79" style="display: none"><span class="math">\(\sum_{i=1}^n \nvec{x}{i} + 2 \vec w\)</span></span>
-    <span id="button-fe40d30f-7a99-4e8d-9dc4-2df6c8ed2f79">
+    <span id="answer-257f8233-2d87-4598-8871-761449aa7d1f" style="display: none"><span class="math">\(\sum_{i=1}^n \nvec{x}{i} + 2 \vec w\)</span></span>
+    <span id="button-257f8233-2d87-4598-8871-761449aa7d1f">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-fe40d30f-7a99-4e8d-9dc4-2df6c8ed2f79').style.display = 'inline-block';
-                document.getElementById('button-fe40d30f-7a99-4e8d-9dc4-2df6c8ed2f79').style.display = 'none'
+                document.getElementById('answer-257f8233-2d87-4598-8871-761449aa7d1f').style.display = 'inline-block';
+                document.getElementById('button-257f8233-2d87-4598-8871-761449aa7d1f').style.display = 'none'
             "
         >
             Show Answer
@@ -1774,13 +1790,13 @@ quarter to quarter, and so the sample exam may not be a perfect match for the to
 <p>Let <span class="math">\(\vec x = (1, 2, 1)^T\)</span>. What is <span class="math">\(H(\vec x)\)</span>?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-82086677-2428-4f59-87bc-7ac0bc13afc0" style="display: none"><span class="math">\(-3\)</span></span>
-    <span id="button-82086677-2428-4f59-87bc-7ac0bc13afc0">
+    <span id="answer-dc797242-511b-4acb-a4b7-84a251690d4d" style="display: none"><span class="math">\(-3\)</span></span>
+    <span id="button-dc797242-511b-4acb-a4b7-84a251690d4d">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-82086677-2428-4f59-87bc-7ac0bc13afc0').style.display = 'inline-block';
-                document.getElementById('button-82086677-2428-4f59-87bc-7ac0bc13afc0').style.display = 'none'
+                document.getElementById('answer-dc797242-511b-4acb-a4b7-84a251690d4d').style.display = 'inline-block';
+                document.getElementById('button-dc797242-511b-4acb-a4b7-84a251690d4d').style.display = 'none'
             "
         >
             Show Answer
@@ -1806,13 +1822,13 @@ quarter to quarter, and so the sample exam may not be a perfect match for the to
 <p>What is the mean squared error of a least squares classifier trained on this data set (without regularization)? Your answer should be a number.</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-396f56ff-438f-4c67-8f0f-d6e91f317afc" style="display: none">0</span>
-    <span id="button-396f56ff-438f-4c67-8f0f-d6e91f317afc">
+    <span id="answer-e11fe664-82c8-45de-8f22-1ed6dff3bfe2" style="display: none">0</span>
+    <span id="button-e11fe664-82c8-45de-8f22-1ed6dff3bfe2">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-396f56ff-438f-4c67-8f0f-d6e91f317afc').style.display = 'inline-block';
-                document.getElementById('button-396f56ff-438f-4c67-8f0f-d6e91f317afc').style.display = 'none'
+                document.getElementById('answer-e11fe664-82c8-45de-8f22-1ed6dff3bfe2').style.display = 'inline-block';
+                document.getElementById('button-e11fe664-82c8-45de-8f22-1ed6dff3bfe2').style.display = 'none'
             "
         >
             Show Answer
@@ -1894,13 +1910,13 @@ quarter to quarter, and so the sample exam may not be a perfect match for the to
 <p>What is the <b>total</b><i>square</i> loss of <span class="math">\(H\)</span> on this data set?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-4e43c905-9f11-424c-a1d4-b2ac520c7b5a" style="display: none">13.5</span>
-    <span id="button-4e43c905-9f11-424c-a1d4-b2ac520c7b5a">
+    <span id="answer-8a9e474c-dd0f-4d9a-bd6d-1be583189c66" style="display: none">13.5</span>
+    <span id="button-8a9e474c-dd0f-4d9a-bd6d-1be583189c66">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-4e43c905-9f11-424c-a1d4-b2ac520c7b5a').style.display = 'inline-block';
-                document.getElementById('button-4e43c905-9f11-424c-a1d4-b2ac520c7b5a').style.display = 'none'
+                document.getElementById('answer-8a9e474c-dd0f-4d9a-bd6d-1be583189c66').style.display = 'inline-block';
+                document.getElementById('button-8a9e474c-dd0f-4d9a-bd6d-1be583189c66').style.display = 'none'
             "
         >
             Show Answer
@@ -1915,13 +1931,13 @@ quarter to quarter, and so the sample exam may not be a perfect match for the to
 <p>What is the <b>total</b><i>perceptron</i> loss of <span class="math">\(H\)</span> on this data set?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-bf2b5a52-da71-4a8b-bddd-b7b42bc01986" style="display: none">1.5</span>
-    <span id="button-bf2b5a52-da71-4a8b-bddd-b7b42bc01986">
+    <span id="answer-ac295995-3191-463b-8c48-59c88a9453b7" style="display: none">1.5</span>
+    <span id="button-ac295995-3191-463b-8c48-59c88a9453b7">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-bf2b5a52-da71-4a8b-bddd-b7b42bc01986').style.display = 'inline-block';
-                document.getElementById('button-bf2b5a52-da71-4a8b-bddd-b7b42bc01986').style.display = 'none'
+                document.getElementById('answer-ac295995-3191-463b-8c48-59c88a9453b7').style.display = 'inline-block';
+                document.getElementById('button-ac295995-3191-463b-8c48-59c88a9453b7').style.display = 'none'
             "
         >
             Show Answer
@@ -1936,13 +1952,13 @@ quarter to quarter, and so the sample exam may not be a perfect match for the to
 <p>What is the <b>total</b><i>hinge</i> loss of <span class="math">\(H\)</span> on this data set?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-64b63c6c-a9da-42ba-9447-fae4710c9ce2" style="display: none">4</span>
-    <span id="button-64b63c6c-a9da-42ba-9447-fae4710c9ce2">
+    <span id="answer-5b852129-bba6-4d02-b349-46afe4743205" style="display: none">4</span>
+    <span id="button-5b852129-bba6-4d02-b349-46afe4743205">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-64b63c6c-a9da-42ba-9447-fae4710c9ce2').style.display = 'inline-block';
-                document.getElementById('button-64b63c6c-a9da-42ba-9447-fae4710c9ce2').style.display = 'none'
+                document.getElementById('answer-5b852129-bba6-4d02-b349-46afe4743205').style.display = 'inline-block';
+                document.getElementById('button-5b852129-bba6-4d02-b349-46afe4743205').style.display = 'none'
             "
         >
             Show Answer
@@ -1981,13 +1997,13 @@ quarter to quarter, and so the sample exam may not be a perfect match for the to
 <p>What is the gradient of this function at the point <span class="math">\((1, 1)\)</span>?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-96430c57-c4ca-4664-afaa-c862b5f2e749" style="display: none"><span class="math">\((-1,3)^T\)</span></span>
-    <span id="button-96430c57-c4ca-4664-afaa-c862b5f2e749">
+    <span id="answer-e936fe9d-1c7d-49e6-bb0d-61edc0b35de7" style="display: none"><span class="math">\((-1,3)^T\)</span></span>
+    <span id="button-e936fe9d-1c7d-49e6-bb0d-61edc0b35de7">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-96430c57-c4ca-4664-afaa-c862b5f2e749').style.display = 'inline-block';
-                document.getElementById('button-96430c57-c4ca-4664-afaa-c862b5f2e749').style.display = 'none'
+                document.getElementById('answer-e936fe9d-1c7d-49e6-bb0d-61edc0b35de7').style.display = 'inline-block';
+                document.getElementById('button-e936fe9d-1c7d-49e6-bb0d-61edc0b35de7').style.display = 'none'
             "
         >
             Show Answer
@@ -2002,13 +2018,13 @@ quarter to quarter, and so the sample exam may not be a perfect match for the to
 <p>What is the gradient of this function at the point <span class="math">\((-1, -1)\)</span>?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-d47b994f-6ff6-49d8-9e84-e404edfd5c0d" style="display: none"><span class="math">\((-2,0)^T\)</span></span>
-    <span id="button-d47b994f-6ff6-49d8-9e84-e404edfd5c0d">
+    <span id="answer-c01b164b-0458-48f8-9135-ab589507b2a3" style="display: none"><span class="math">\((-2,0)^T\)</span></span>
+    <span id="button-c01b164b-0458-48f8-9135-ab589507b2a3">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-d47b994f-6ff6-49d8-9e84-e404edfd5c0d').style.display = 'inline-block';
-                document.getElementById('button-d47b994f-6ff6-49d8-9e84-e404edfd5c0d').style.display = 'none'
+                document.getElementById('answer-c01b164b-0458-48f8-9135-ab589507b2a3').style.display = 'inline-block';
+                document.getElementById('button-c01b164b-0458-48f8-9135-ab589507b2a3').style.display = 'none'
             "
         >
             Show Answer
@@ -2073,13 +2089,13 @@ quarter to quarter, and so the sample exam may not be a perfect match for the to
 <p>Suppose that the initial weight vector is <span class="math">\(\vec w = (0, 0)^T\)</span> and that the learning rate is <span class="math">\(\eta = 1\)</span>. What will be the weight vector after one iteration of subgradient descent?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-30552a20-f6d2-4b83-b2a5-d0c51baaf5f4" style="display: none"><span class="math">\((1, 3)^T\)</span></span>
-    <span id="button-30552a20-f6d2-4b83-b2a5-d0c51baaf5f4">
+    <span id="answer-d1636cf1-7b56-4215-9654-39308da4a413" style="display: none"><span class="math">\((1, 3)^T\)</span></span>
+    <span id="button-d1636cf1-7b56-4215-9654-39308da4a413">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-30552a20-f6d2-4b83-b2a5-d0c51baaf5f4').style.display = 'inline-block';
-                document.getElementById('button-30552a20-f6d2-4b83-b2a5-d0c51baaf5f4').style.display = 'none'
+                document.getElementById('answer-d1636cf1-7b56-4215-9654-39308da4a413').style.display = 'inline-block';
+                document.getElementById('button-d1636cf1-7b56-4215-9654-39308da4a413').style.display = 'none'
             "
         >
             Show Answer
@@ -2194,13 +2210,13 @@ quarter to quarter, and so the sample exam may not be a perfect match for the to
 <p>What is <span class="math">\(\frac{d}{d \vec x} f(\vec x)\)</span>?</p>
 <p>
 <span class="inline-response-box">
-    <span id="answer-2d003a10-c9a8-411f-88a1-deca8dfebcde" style="display: none"><span class="math">\(2 A \vec x + \vec b\)</span></span>
-    <span id="button-2d003a10-c9a8-411f-88a1-deca8dfebcde">
+    <span id="answer-470f9464-5af4-46ac-b9ed-e41290310777" style="display: none"><span class="math">\(2 A \vec x + \vec b\)</span></span>
+    <span id="button-470f9464-5af4-46ac-b9ed-e41290310777">
         <button
             type="button"
             onclick="
-                document.getElementById('answer-2d003a10-c9a8-411f-88a1-deca8dfebcde').style.display = 'inline-block';
-                document.getElementById('button-2d003a10-c9a8-411f-88a1-deca8dfebcde').style.display = 'none'
+                document.getElementById('answer-470f9464-5af4-46ac-b9ed-e41290310777').style.display = 'inline-block';
+                document.getElementById('button-470f9464-5af4-46ac-b9ed-e41290310777').style.display = 'none'
             "
         >
             Show Answer

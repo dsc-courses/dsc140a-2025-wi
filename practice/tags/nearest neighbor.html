@@ -142,7 +142,23 @@
         <div class="problem">
     <div class="problem-body">
 <p>Consider the data set of diamonds and circles shown below. Suppose a <span class="math">\(k\)</span>-nn classifier is used to predict the label of the new point marked by <span class="math">\(\times\)</span>, with <span class="math">\(k = 3\)</span>. What will be the prediction? You may assume that the Euclidean distance is used.</p>
-<center><div class="image"><img src="../images/018/data.png" /></div></center>
+<center><div class="image"><img src="../images/018/data-no-soln.PNG" /></div></center>
+<details>
+    <summary>Solution</summary>
+<p>The new point will be classified as a Diamond.</p>
+<p>To classify a point with <span class="math">\(k\)</span>-nn, we examine the <span class="math">\(k\)</span>(in this case, <span class="math">\(k = 3\)</span>) nearest "neighbors" to whichever point we want to classify. Then, whichever class appears more among those neighbors, we'll predict our new point is part of that class too.</p>
+<p>So, what are the three neighbors closest to our new point? Since we assume Euclidean distance (and not some other type of distance, like Manhattan distance), this problem becomes fairly easy to solve from first glance.</p>
+<p>Graphically: the three nearest points are the red Diamond to the upper-right of our new point, the blue Circle to the lower-left of our new point, and the red Diamond directly above our new point. The diamond class is more common among the three neighbors, so we predict our new point will also be of the Diamond class.</p>
+<p>Mathematically: Euclidean distance is defined by <span class="math">\(D = \sqrt{(\delta x)^2 + (\delta y)^2}\)</span>, where <span class="math">\(\delta x\)</span> is change in the x-direction and <span class="math">\(\delta y\)</span> is change in the y-direction. We can find the Euclidean distances from each point in our graph to our new point. Whichever three points have the smallest Euclidean distances are the three neighbors we should look at the classes of. After finding all Euclidean distances, we find that the three neighbors we should choose are the same as the ones we chose above, in the visual explanation. The respective Euclidean distances for these three points are <span class="math">\(\sqrt{1^2 + 1^2} = \sqrt{2}\)</span>, <span class="math">\(\sqrt{(-1)^2 + (-2)^2} = \sqrt{5}\)</span>, and <span class="math">\(\sqrt{0^2 + 3^2} = 3\)</span>, which are shorter than all other distances to the new point in the graph. As an aside, the idea behind <span class="math">\(k\)</span>-nn is that we assume a property that if two points are similar in location (i.e. they are near each other), then they are likely similar in class. So, <span class="math">\(k\)</span>-nn is valuable in situations where we have data that is very spatially correlated (ex: predicting price of a new house as "high" or "low" depending on other house prices in the area.)</p>
+</details>
+
+<details>
+    <summary>Solution</summary>
+<p>To classify a point with <span class="math">\(k\)</span>-nn, we examine the <span class="math">\(k\)</span>(in this case, <span class="math">\(k = 3)\)</span> nearest neighbors to whichever point we want to classify. Then, whichever class appears more among those neighbors, we'll predict our new point is part of that class too.</p>
+<p><b>Graphically</b>: The three nearest points are the red Diamond to the upper-right of our new point, the blue Circle to the lower-left of our new point, and the red Diamond directly above our new point. The diamond class is more common among the three neighbors, so we predict our new point will also be of the Diamond class.</p>
+<p><b>Mathematically</b>: Euclidean distance is defined by <span class="math">\(D = \sqrt{(\delta x)^2 + (\delta y)^2}\)</span>, where <span class="math">\(\delta x\)</span> is change in the x-direction and <span class="math">\(\delta y\)</span> is change in the y-direction. We can find the Euclidean distances from each point in our graph to our new point. Whichever three points have the smallest Euclidean distances to our new point are the three neighbors we should look at the classes of. After finding all Euclidean distances, we find that the three neighbors we should choose are the same as the ones we chose above, in the visual explanation. The respective Euclidean distances for these three points to our new point are <span class="math">\(\sqrt{1^2 + 1^2} = \sqrt{2}\)</span>, <span class="math">\(\sqrt{(-2)^2 + (-1)^2} = \sqrt{5}\)</span>, and <span class="math">\(\sqrt{0^2 + 3^2} = 3\)</span>, which are shorter than all other distances to the new point in the graph.</p>
+</details>
+
     </div>
 </div>
 
