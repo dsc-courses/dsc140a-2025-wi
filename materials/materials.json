@@ -318,7 +318,11 @@
                         "number": 8,
                         "videos": null
                     },
-                    "artifacts": {}
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/08-feature_maps/slides.pdf"
+                        }
+                    }
                 },
                 "09-regularization": {
                     "metadata": {
