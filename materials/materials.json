@@ -669,7 +669,14 @@
                         "topic": "SVMs and Feature Maps",
                         "number": 4
                     },
-                    "artifacts": {}
+                    "artifacts": {
+                        "homework.pdf": {
+                            "path": "homeworks/04-svm_and_feature_maps/homework.pdf"
+                        },
+                        "template.zip": {
+                            "path": "homeworks/04-svm_and_feature_maps/template.zip"
+                        }
+                    }
                 },
                 "05-regularization": {
                     "metadata": {
