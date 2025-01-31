@@ -321,6 +321,9 @@
                     "artifacts": {
                         "slides.pdf": {
                             "path": "lectures/08-feature_maps/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/08-feature_maps/slides-marked.pdf"
                         }
                     }
                 },
