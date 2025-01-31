@@ -660,6 +660,9 @@
                         "homework.pdf": {
                             "path": "homeworks/03-convexity_and_classification/homework.pdf"
                         },
+                        "solution.pdf": {
+                            "path": "homeworks/03-convexity_and_classification/solution.pdf"
+                        },
                         "template.zip": {
                             "path": "homeworks/03-convexity_and_classification/template.zip"
                         }
