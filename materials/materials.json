@@ -346,7 +346,11 @@
                         "number": 9,
                         "videos": null
                     },
-                    "artifacts": {}
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/09-regularization/slides.pdf"
+                        }
+                    }
                 },
                 "10-kernels": {
                     "metadata": {
