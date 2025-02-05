@@ -349,6 +349,9 @@
                     "artifacts": {
                         "slides.pdf": {
                             "path": "lectures/09-regularization/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/09-regularization/slides-marked.pdf"
                         }
                     }
                 },
