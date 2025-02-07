@@ -94,7 +94,7 @@
                 },
                 "05-kernels": {
                     "metadata": {
-                        "date": "2025-02-14",
+                        "date": "2025-02-07",
                         "topic": "Regularization",
                         "number": 5,
                         "recording": null
@@ -107,7 +107,7 @@
                 },
                 "06-probabilistic_modeling": {
                     "metadata": {
-                        "date": "2025-02-21",
+                        "date": "2025-02-14",
                         "topic": "Probabilistic Modeling",
                         "number": 6,
                         "recording": null
@@ -116,7 +116,7 @@
                 },
                 "07-multivariate-gaussians": {
                     "metadata": {
-                        "date": "2025-02-28",
+                        "date": "2025-02-21",
                         "topic": "Bayes Classifiers",
                         "number": 7,
                         "recording": null
@@ -125,7 +125,7 @@
                 },
                 "08-decision_trees": {
                     "metadata": {
-                        "date": "2025-03-07",
+                        "date": "2025-02-28",
                         "topic": "Decision Trees",
                         "number": 8,
                         "recording": null
@@ -134,7 +134,7 @@
                 },
                 "xx-redemption_exam_review": {
                     "metadata": {
-                        "date": "2025-03-14",
+                        "date": "2025-03-07",
                         "topic": "Midterm 02 Review",
                         "number": 9,
                         "recording": null
@@ -143,7 +143,7 @@
                 },
                 "xx-review": {
                     "metadata": {
-                        "date": "2025-03-21",
+                        "date": "2025-03-14",
                         "topic": "Midterm 02 Review",
                         "number": 10,
                         "recording": null
@@ -152,7 +152,7 @@
                 },
                 "xx-subgradients": {
                     "metadata": {
-                        "date": "2025-03-28",
+                        "date": "2025-03-21",
                         "topic": "Gradient Descent and Subgradients",
                         "number": 11
                     },
