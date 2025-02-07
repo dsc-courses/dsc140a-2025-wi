@@ -95,11 +95,15 @@
                 "05-kernels": {
                     "metadata": {
                         "date": "2025-02-14",
-                        "topic": "Regularization and Kernels",
+                        "topic": "Regularization",
                         "number": 5,
                         "recording": null
                     },
-                    "artifacts": {}
+                    "artifacts": {
+                        "discussion.pdf": {
+                            "path": "discussions/05-kernels/discussion.pdf"
+                        }
+                    }
                 },
                 "06-probabilistic_modeling": {
                     "metadata": {
