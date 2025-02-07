@@ -701,6 +701,9 @@
                         "homework.pdf": {
                             "path": "homeworks/04-svm_and_feature_maps/homework.pdf"
                         },
+                        "solution.pdf": {
+                            "path": "homeworks/04-svm_and_feature_maps/solution.pdf"
+                        },
                         "template.zip": {
                             "path": "homeworks/04-svm_and_feature_maps/template.zip"
                         }
