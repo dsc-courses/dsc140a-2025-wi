@@ -102,6 +102,9 @@
                     "artifacts": {
                         "discussion.pdf": {
                             "path": "discussions/05-kernels/discussion.pdf"
+                        },
+                        "solution.pdf": {
+                            "path": "discussions/05-kernels/solution.pdf"
                         }
                     }
                 },
