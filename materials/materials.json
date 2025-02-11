@@ -370,28 +370,7 @@
                         "date": "2025-02-11",
                         "topic": "Kernels",
                         "number": 10,
-                        "videos": [
-                            {
-                                "title": "High-dimensional feature maps",
-                                "url": "https://youtu.be/TFb7OYUaICw"
-                            },
-                            {
-                                "title": "The Kernel Trick",
-                                "url": "https://youtu.be/Ryc4nCqoxl0"
-                            },
-                            {
-                                "title": "Kernel Ridge Regression",
-                                "url": "https://youtu.be/ojoasqwLTwM"
-                            },
-                            {
-                                "title": "Valid Kernels",
-                                "url": "https://youtu.be/HJbwmG5FqlI"
-                            },
-                            {
-                                "title": "Demo: Gaussian Kernel SVMs",
-                                "url": "https://youtu.be/zuz42-ufUKk"
-                            }
-                        ]
+                        "videos": null
                     },
                     "artifacts": {
                         "slides.pdf": {
