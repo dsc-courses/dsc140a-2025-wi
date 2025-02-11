@@ -393,7 +393,11 @@
                             }
                         ]
                     },
-                    "artifacts": {}
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/10-kernels/slides.pdf"
+                        }
+                    }
                 },
                 "11-bayes_decision_theory": {
                     "metadata": {
