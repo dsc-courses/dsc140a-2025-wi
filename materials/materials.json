@@ -375,6 +375,9 @@
                     "artifacts": {
                         "slides.pdf": {
                             "path": "lectures/10-kernels/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/10-kernels/slides-marked.pdf"
                         }
                     }
                 },
