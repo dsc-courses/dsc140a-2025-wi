@@ -393,7 +393,11 @@
                             }
                         ]
                     },
-                    "artifacts": {}
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/11-bayes_decision_theory/slides.pdf"
+                        }
+                    }
                 },
                 "12-density_estimation": {
                     "metadata": {
