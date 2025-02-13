@@ -732,7 +732,14 @@
                         "topic": "Kernels and Probabilistic Modeling",
                         "number": 6
                     },
-                    "artifacts": {}
+                    "artifacts": {
+                        "homework.pdf": {
+                            "path": "homeworks/06-kernels_and_bayes/homework.pdf"
+                        },
+                        "template.zip": {
+                            "path": "homeworks/06-kernels_and_bayes/template.zip"
+                        }
+                    }
                 },
                 "07-mle": {
                     "metadata": {
