@@ -396,6 +396,9 @@
                     "artifacts": {
                         "slides.pdf": {
                             "path": "lectures/11-bayes_decision_theory/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/11-bayes_decision_theory/slides-marked.pdf"
                         }
                     }
                 },
