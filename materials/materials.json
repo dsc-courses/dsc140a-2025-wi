@@ -720,6 +720,9 @@
                         "homework.pdf": {
                             "path": "homeworks/05-regularization/homework.pdf"
                         },
+                        "solution.pdf": {
+                            "path": "homeworks/05-regularization/solution.pdf"
+                        },
                         "template.zip": {
                             "path": "homeworks/05-regularization/template.zip"
                         }
