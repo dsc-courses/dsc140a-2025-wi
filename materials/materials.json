@@ -425,7 +425,11 @@
                         "number": 12,
                         "videos": null
                     },
-                    "artifacts": {}
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/12-density_estimation/slides.pdf"
+                        }
+                    }
                 },
                 "13-mle": {
                     "metadata": {
