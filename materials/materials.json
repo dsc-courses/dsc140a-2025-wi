@@ -441,7 +441,11 @@
                         "number": 13,
                         "videos": null
                     },
-                    "artifacts": {}
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/13-mle/slides.pdf"
+                        }
+                    }
                 },
                 "14-mv-gaussians": {
                     "metadata": {
