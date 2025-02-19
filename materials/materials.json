@@ -428,6 +428,9 @@
                     "artifacts": {
                         "slides.pdf": {
                             "path": "lectures/12-density_estimation/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/12-density_estimation/slides-marked.pdf"
                         }
                     }
                 },
