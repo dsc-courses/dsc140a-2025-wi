@@ -444,6 +444,9 @@
                     "artifacts": {
                         "slides.pdf": {
                             "path": "lectures/13-mle/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/13-mle/slides-marked.pdf"
                         }
                     }
                 },
