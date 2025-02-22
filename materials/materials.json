@@ -131,7 +131,11 @@
                         "number": 7,
                         "recording": null
                     },
-                    "artifacts": {}
+                    "artifacts": {
+                        "discussion.pdf": {
+                            "path": "discussions/07-probabilistic_modeling/discussion.pdf"
+                        }
+                    }
                 },
                 "08-multivariate-gaussians": {
                     "metadata": {
