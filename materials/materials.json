@@ -134,6 +134,9 @@
                     "artifacts": {
                         "discussion.pdf": {
                             "path": "discussions/07-probabilistic_modeling/discussion.pdf"
+                        },
+                        "solution.pdf": {
+                            "path": "discussions/07-probabilistic_modeling/solution.pdf"
                         }
                     }
                 },
