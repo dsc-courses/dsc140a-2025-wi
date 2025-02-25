@@ -461,7 +461,11 @@
                         "number": 14,
                         "videos": null
                     },
-                    "artifacts": {}
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/14-mv-gaussians/slides.pdf"
+                        }
+                    }
                 },
                 "15-naive_bayes": {
                     "metadata": {
