@@ -480,7 +480,11 @@
                         "number": 15,
                         "videos": null
                     },
-                    "artifacts": {}
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/15-naive_bayes/slides.pdf"
+                        }
+                    }
                 },
                 "16-regression_probabilistic": {
                     "metadata": {
