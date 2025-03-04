@@ -150,6 +150,9 @@
                     "artifacts": {
                         "discussion.pdf": {
                             "path": "discussions/08-mt02-review/discussion.pdf"
+                        },
+                        "solution.pdf": {
+                            "path": "discussions/08-mt02-review/solution.pdf"
                         }
                     }
                 },
