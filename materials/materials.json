@@ -500,7 +500,11 @@
                         "number": 16,
                         "videos": null
                     },
-                    "artifacts": {}
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/16-regression_probabilistic/slides.pdf"
+                        }
+                    }
                 },
                 "17-decision_trees": {
                     "metadata": {
