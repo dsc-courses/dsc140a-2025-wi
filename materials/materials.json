@@ -506,6 +506,9 @@
                     "artifacts": {
                         "slides.pdf": {
                             "path": "lectures/16-regression_probabilistic/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/16-regression_probabilistic/slides-marked.pdf"
                         }
                     }
                 },
