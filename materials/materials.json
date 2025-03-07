@@ -519,7 +519,11 @@
                         "number": 17,
                         "videos": null
                     },
-                    "artifacts": {}
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/17-decision_trees/slides.pdf"
+                        }
+                    }
                 },
                 "18-boosting": {
                     "metadata": {
@@ -528,7 +532,11 @@
                         "number": 18,
                         "videos": null
                     },
-                    "artifacts": {}
+                    "artifacts": {
+                        "slides.pdf": {
+                            "path": "lectures/18-boosting/slides.pdf"
+                        }
+                    }
                 },
                 "xx-neural_networks": {
                     "metadata": {
