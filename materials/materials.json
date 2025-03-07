@@ -650,9 +650,9 @@
                 },
                 "09-decision_trees": {
                     "metadata": {
-                        "due": "2024-03-17 23:59:00",
+                        "due": "2025-03-16 23:59:00",
                         "ready": true,
-                        "released": "2024-03-12 00:00:00",
+                        "released": "2025-03-06 00:00:00",
                         "topic": "Decision Trees",
                         "number": 9
                     },
@@ -660,9 +660,9 @@
                 },
                 "xx-kernels": {
                     "metadata": {
-                        "due": "2024-03-24 23:59:00",
+                        "due": "2025-03-23 23:59:00",
                         "ready": false,
-                        "released": "2024-03-19 00:00:00",
+                        "released": "2025-03-18 00:00:00",
                         "topic": "Kernels",
                         "number": 10
                     },
