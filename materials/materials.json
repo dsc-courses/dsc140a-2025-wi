@@ -166,6 +166,9 @@
                     "artifacts": {
                         "discussion.pdf": {
                             "path": "discussions/09-multivariate-gaussians/discussion.pdf"
+                        },
+                        "solution.pdf": {
+                            "path": "discussions/09-multivariate-gaussians/solution.pdf"
                         }
                     }
                 },
