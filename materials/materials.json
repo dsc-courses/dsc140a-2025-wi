@@ -163,7 +163,11 @@
                         "number": 9,
                         "recording": null
                     },
-                    "artifacts": {}
+                    "artifacts": {
+                        "discussion.pdf": {
+                            "path": "discussions/09-multivariate-gaussians/discussion.pdf"
+                        }
+                    }
                 },
                 "10-decision_trees": {
                     "metadata": {
