@@ -529,6 +529,9 @@
                     "artifacts": {
                         "slides.pdf": {
                             "path": "lectures/17-decision_trees/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/17-decision_trees/slides-marked.pdf"
                         }
                     }
                 },
