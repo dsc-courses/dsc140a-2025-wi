@@ -549,6 +549,9 @@
                     "artifacts": {
                         "slides.pdf": {
                             "path": "lectures/18-boosting/slides.pdf"
+                        },
+                        "slides-marked.pdf": {
+                            "path": "lectures/18-boosting/slides-marked.pdf"
                         }
                     }
                 },
