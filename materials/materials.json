@@ -179,7 +179,11 @@
                         "number": 10,
                         "recording": null
                     },
-                    "artifacts": {}
+                    "artifacts": {
+                        "discussion.pdf": {
+                            "path": "discussions/10-decision_trees/discussion.pdf"
+                        }
+                    }
                 },
                 "xx-redemption_exam_review": {
                     "metadata": {
