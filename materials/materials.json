@@ -182,6 +182,9 @@
                     "artifacts": {
                         "discussion.pdf": {
                             "path": "discussions/10-decision_trees/discussion.pdf"
+                        },
+                        "solution.pdf": {
+                            "path": "discussions/10-decision_trees/solution.pdf"
                         }
                     }
                 },
