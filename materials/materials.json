@@ -733,17 +733,7 @@
                         "topic": "Nearest Neighbors and Linear Regression",
                         "number": 1
                     },
-                    "artifacts": {
-                        "homework.pdf": {
-                            "path": "homeworks/01-nearest_neighbor_and_least_squares/homework.pdf"
-                        },
-                        "solution.pdf": {
-                            "path": "homeworks/01-nearest_neighbor_and_least_squares/solution.pdf"
-                        },
-                        "template.zip": {
-                            "path": "homeworks/01-nearest_neighbor_and_least_squares/template.zip"
-                        }
-                    }
+                    "artifacts": {}
                 },
                 "02-linear_models_and_gradient": {
                     "metadata": {
@@ -752,17 +742,7 @@
                         "topic": "Linear Models and Gradients",
                         "number": 2
                     },
-                    "artifacts": {
-                        "homework.pdf": {
-                            "path": "homeworks/02-linear_models_and_gradient/homework.pdf"
-                        },
-                        "solution.pdf": {
-                            "path": "homeworks/02-linear_models_and_gradient/solution.pdf"
-                        },
-                        "template.zip": {
-                            "path": "homeworks/02-linear_models_and_gradient/template.zip"
-                        }
-                    }
+                    "artifacts": {}
                 },
                 "03-convexity_and_classification": {
                     "metadata": {
@@ -771,17 +751,7 @@
                         "topic": "Convexity and Perceptrons",
                         "number": 3
                     },
-                    "artifacts": {
-                        "homework.pdf": {
-                            "path": "homeworks/03-convexity_and_classification/homework.pdf"
-                        },
-                        "solution.pdf": {
-                            "path": "homeworks/03-convexity_and_classification/solution.pdf"
-                        },
-                        "template.zip": {
-                            "path": "homeworks/03-convexity_and_classification/template.zip"
-                        }
-                    }
+                    "artifacts": {}
                 },
                 "04-svm_and_feature_maps": {
                     "metadata": {
@@ -790,17 +760,7 @@
                         "topic": "SVMs and Feature Maps",
                         "number": 4
                     },
-                    "artifacts": {
-                        "homework.pdf": {
-                            "path": "homeworks/04-svm_and_feature_maps/homework.pdf"
-                        },
-                        "solution.pdf": {
-                            "path": "homeworks/04-svm_and_feature_maps/solution.pdf"
-                        },
-                        "template.zip": {
-                            "path": "homeworks/04-svm_and_feature_maps/template.zip"
-                        }
-                    }
+                    "artifacts": {}
                 },
                 "05-regularization": {
                     "metadata": {
@@ -809,17 +769,7 @@
                         "topic": "Regularization",
                         "number": 5
                     },
-                    "artifacts": {
-                        "homework.pdf": {
-                            "path": "homeworks/05-regularization/homework.pdf"
-                        },
-                        "solution.pdf": {
-                            "path": "homeworks/05-regularization/solution.pdf"
-                        },
-                        "template.zip": {
-                            "path": "homeworks/05-regularization/template.zip"
-                        }
-                    }
+                    "artifacts": {}
                 },
                 "06-kernels_and_bayes": {
                     "metadata": {
@@ -828,17 +778,7 @@
                         "topic": "Kernels and Probabilistic Modeling",
                         "number": 6
                     },
-                    "artifacts": {
-                        "homework.pdf": {
-                            "path": "homeworks/06-kernels_and_bayes/homework.pdf"
-                        },
-                        "solution.pdf": {
-                            "path": "homeworks/06-kernels_and_bayes/solution.pdf"
-                        },
-                        "template.zip": {
-                            "path": "homeworks/06-kernels_and_bayes/template.zip"
-                        }
-                    }
+                    "artifacts": {}
                 },
                 "07-mle": {
                     "metadata": {
@@ -847,17 +787,7 @@
                         "topic": "Density Estimation",
                         "number": 7
                     },
-                    "artifacts": {
-                        "homework.pdf": {
-                            "path": "homeworks/07-mle/homework.pdf"
-                        },
-                        "solution.pdf": {
-                            "path": "homeworks/07-mle/solution.pdf"
-                        },
-                        "template.zip": {
-                            "path": "homeworks/07-mle/template.zip"
-                        }
-                    }
+                    "artifacts": {}
                 },
                 "08-mv_gaussians_and_nb": {
                     "metadata": {
@@ -866,17 +796,7 @@
                         "topic": "Multivariate Gaussians and Naive Bayes",
                         "number": 8
                     },
-                    "artifacts": {
-                        "homework.pdf": {
-                            "path": "homeworks/08-mv_gaussians_and_nb/homework.pdf"
-                        },
-                        "solution.pdf": {
-                            "path": "homeworks/08-mv_gaussians_and_nb/solution.pdf"
-                        },
-                        "template.zip": {
-                            "path": "homeworks/08-mv_gaussians_and_nb/template.zip"
-                        }
-                    }
+                    "artifacts": {}
                 },
                 "09-super_hw": {
                     "metadata": {
@@ -885,17 +805,7 @@
                         "topic": "Super Homework",
                         "number": 9
                     },
-                    "artifacts": {
-                        "homework.pdf": {
-                            "path": "homeworks/09-super_hw/homework.pdf"
-                        },
-                        "solution.pdf": {
-                            "path": "homeworks/09-super_hw/solution.pdf"
-                        },
-                        "template.zip": {
-                            "path": "homeworks/09-super_hw/template.zip"
-                        }
-                    }
+                    "artifacts": {}
                 }
             }
         },
